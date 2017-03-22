@@ -1,5 +1,18 @@
 # fss17: foundations of software science
 
+NCSU CSC 591-023 (10722)  
+CSC 791-023 (11162)  
+Tues/Thurs 4:30 to 5:45  
+Mid-session exam week 10 (on terminology)    
+No final exam.
+
+
+## Why this subject?
+
+<img align=right src="https://github.com/txt/fss16/raw/master/img/science.png">
+
+"Science" is the process of communities sharing and reviewing and improving each other's ideas.
+
 Sadly, most "data science" is not about "science". Rather its about vendors selling you stuff tjat does not work properly and does not
 ring an alarm when it starts failing.
 
