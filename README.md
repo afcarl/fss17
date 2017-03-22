@@ -15,10 +15,10 @@ Apply SE principles to a data science problem.
 
 
   
-
-Comprehensible | Something we can read, argue with
-Fast |Not a CPU hog
+Operator | Notes
 ------|--------
+Comprehensible | Something we can read, argue with
+Fast | Not a CPU hog
 Light |Small memory footprint 
 Goal-aware |Different goals means different models. ANd multiple goals = no problem!
 Humble | Can publish succinct certification envelope (so we know when not to trust)
