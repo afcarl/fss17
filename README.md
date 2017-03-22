@@ -12,14 +12,15 @@ No final exam.
 ## Why this subject?
 
 
-"Science" is the process of communities sharing and reviewing and improving each other's ideas.
-
-Sadly, most "data science" is not about "science". Rather its about vendors selling you stuff tjat does not work properly and does not
+"Science" is the process of communities sharing and reviewing and improving each other's ideas. Sadly, most "data science" is not about "science". Rather its about vendors selling you stuff that does not work properly and does not
 ring an alarm when it starts failing.
 
-So lets fix that.
+So a million million people can run data miners. But how many  now when those data miners start going wrong? And how to fix faulty models?
 
-<br clear=all>
+Do this subject, learn answers to those questions, become the data scientist everyone needs to consult with  when things start going wrong.
+
+
+ 
 
 ## Project
 
@@ -48,9 +49,6 @@ Incremental | Can update old models with new data
 
 FYI: I have a basline tool for all of those. But most parts of it remain untested. And might want to use
          the tool for inspiration rather then execution.
+ 
 
-## Why Take This Subject?
 
-A million million people can run data miners. But how many  now when those data miners start going wrong? And how to fix faulty models?
-
-Do this subject, learn answers to those questions, become the data scientist everyone needs to consult with  when things start going wrong.
