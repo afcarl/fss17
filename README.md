@@ -9,7 +9,7 @@ Lets fix that.
 
 Apply SE principles to a data science problem. 
 
-- Implement add any of the operators listed on slide 9 of [this tutorial](http://tiny.cc/timm) to any 
+- Implement add any of the operators listed on slide 9 of [this tutorial](http://tiny.cc/timm) (and listed below) to any 
   data science problem 
 - Ideally one from SE but i can be flexible on that. e.g. if you are doing X in your thesis, then we can apply all this to X.
 
@@ -33,4 +33,8 @@ Incremental | Can update old models with new data
 FYI: I have a basline tool for all of those. But most parts of it remain untested. And might want to use
          the tool for inspiration rather then execution.
 
+## Why Take This Subject?
 
+A million million people can run data miners. But how many  now when those data miners start going wrong? And how to fix faulty models?
+
+Do this subject, learn answers to those questions, become the data scientist everyone needs to consult with  when things start going wrong.
