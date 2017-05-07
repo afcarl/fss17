@@ -51,4 +51,25 @@ FYI: I have a basline tool for all of those. But most parts of it remain unteste
          the tool for inspiration rather then execution.
  
 
+## Student Goals
 
+The goal of this work is to destroy, or at least
+find limits with my prior work. As inputs for that task
+I offer FLASH, a tool kit that ofers a baseline0 implementation
+of many of the tools that I think are important. 
+Your job is to 
+
+- research alternate ways to implement any part of that  kit
+- implemenent on of them
+- compare them to FLASH
+- show where FLASH falls down
+- make a recommendation about 
+   - when not to use FLASH and use something else
+   - how to improve FLASH to make it let your better thing.
+   - how to improve the better thing to make it more like FLASH
+
+Now, of course, you should expect to do better than FLASH. FLASH
+is a one-size-fits all tool designed with a "near enough is good
+enough" attitude. Specific tools often do better
+on specific data sets.  So consider yourself a success if
+you prove FLASH a failure!

@@ -1,0 +1,13 @@
+# vim stuff
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+# gold stuff
+tmp
+_goldrc
+# vim stuff
+awkprof.out
+awkvars.out
