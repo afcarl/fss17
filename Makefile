@@ -1,3 +1,4 @@
+
 typo:  ready
 	@- git status
 	@- git commit -am "saving"
@@ -13,7 +14,7 @@ status:; @- git status
 
 ready: gitting 
 
-gitting:
+gitting: timm
 	@git config --global credential.helper cache
 	@git config credential.helper 'cache --timeout=3600'
 	@git config --global user.email tim.menzies@gmail.com
