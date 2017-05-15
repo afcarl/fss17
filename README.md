@@ -9,7 +9,7 @@ Tues/Thurs 4:30 to 5:45
 Mid-session exam week 10 (on terminology)    
 No final exam.
 
-<img align=right src="https://github.com/txt/fss16/raw/master/img/science.png">
+![data science](https://github.com/txt/fss16/raw/master/img/science.png)
 
 
 # Why this subject?
