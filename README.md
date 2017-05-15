@@ -35,21 +35,20 @@ Apply SE principles to a data science problem.
 
 
   
-Operator | Notes
-------|--------
-Comprehensible | Something we can read, argue with
-Fast | Not a CPU hog
-Light |Small memory footprint 
-Goal-aware |Different goals means different models. ANd multiple goals = no problem!
-Humble | Can publish succinct certification envelope (so we know when not to trust)
-Context-aware | Knows that local parts of data ⇒ different models. Knows how to find different contexts
-Privacy-aware | Can hide an individual's data
-Anomaly-aware | Can detect when new inputs differ from old training data
-Shareable | Knows how to transfer models, data, between contexts
-Self-tuning | And can do it quickly
-Incremental | Can update old models with new data
-
-
+|Operator | Notes|
+|------|--------|
+|Comprehensible | Something we can read, argue with|
+|Fast | Not a CPU hog|
+|Light |Small memory footprint |
+|Goal-aware |Different goals means different models. ANd multiple goals = no problem!|
+|Humble | Can publish succinct certification envelope (so we know when not to trust)|
+|Context-aware | Knows that local parts of data ⇒ different models. Knows how to find different contexts|
+|Privacy-aware | Can hide an individual's data|
+|Anomaly-aware | Can detect when new inputs differ from old training data|
+|Shareable | Knows how to transfer models, data, between contexts|
+|Self-tuning | And can do it quickly|
+|Incremental | Can update old models with new data|
+|
 FYI: I have a basline tool for all of those. But most parts of it remain untested. And might want to use
          the tool for inspiration rather then execution.
  
