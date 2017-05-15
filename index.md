@@ -37,17 +37,17 @@ Apply SE principles to a data science problem.
   
 |Operator | Notes|
 |------|--------|
-|Comprehensible | Something we can read, argue with|
-|Fast | Not a CPU hog|
-|Light |Small memory footprint |
-|Goal-aware |Different goals means different models. ANd multiple goals = no problem!|
-|Humble | Can publish succinct certification envelope (so we know when not to trust)|
-|Context-aware | Knows that local parts of data ⇒ different models. Knows how to find different contexts|
-|Privacy-aware | Can hide an individual's data|
-|Anomaly-aware | Can detect when new inputs differ from old training data|
-|Shareable | Knows how to transfer models, data, between contexts|
-|Self-tuning | And can do it quickly|
-|Incremental | Can update old models with new data|
+^|_Comprehensible_ |:  Something we can read, argue with|
+^|_Fast_ |:  Not a CPU hog|
+^|_Light_ |: Small memory footprint |
+^|_Goal-aware_ |: Different goals means different models. ANd multiple goals = no problem!|
+^|_Humble_ |:  Can publish succinct certification envelope (so we know when not to trust)|
+^|_Context-aware_ |:  Knows that local parts of data ⇒ different models. Knows how to find different contexts|
+^|_Privacy-aware_ |:  Can hide an individual's data|
+^|_Anomaly-aware_ |:  Can detect when new inputs differ from old training data|
+^|_Shareable_ |:  Knows how to transfer models, data, between contexts|
+^|_Self-tuning_ |:  And can do it quickly|
+^|_Incremental_ |:  Can update old models with new data|
 
 FYI: I have a basline tool for all of those. But most parts of it remain untested. And might want to use
          the tool for inspiration rather then execution.
