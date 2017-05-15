@@ -48,7 +48,7 @@ Apply SE principles to a data science problem.
 |Shareable | Knows how to transfer models, data, between contexts|
 |Self-tuning | And can do it quickly|
 |Incremental | Can update old models with new data|
-|
+
 FYI: I have a basline tool for all of those. But most parts of it remain untested. And might want to use
          the tool for inspiration rather then execution.
  
