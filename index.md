@@ -10,11 +10,11 @@ Mid-session exam week 10 (on terminology)
 No final exam.
 
 
+<img class="pure-img"  src="https://github.com/txt/fss16/raw/master/img/science.png">
 
 
 # Why this subject?
 
-<img class="pure-img" align=right src="https://github.com/txt/fss16/raw/master/img/science.png">
 
 An important part of knowledge  is "no"; i.e. the ability to critically assess something, and to recognize when one idea  is better, smarter, than another.
 
