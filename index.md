@@ -10,7 +10,7 @@ Mid-session exam week 10 (on terminology)
 No final exam.
 
 
-<img class="pure-img"  src="https://github.com/txt/fss16/raw/master/img/science.png">
+<img class="pure-img displayed"  src="https://github.com/txt/fss16/raw/master/img/science.png">
 
 
 # Why this subject?
