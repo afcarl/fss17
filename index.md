@@ -60,21 +60,28 @@ FYI: I have a basline tool for all of those. But most parts of it remain unteste
 
 The goal of this work is to destroy, or at least
 find limits with my prior work. As inputs for that task
-I offer FLASH, a tool kit that ofers a baseline0 implementation
+I offer DARE, a tool kit that ofers a baseline0 implementation
 of many of the tools that I think are important. 
+
+For everything I show you, your response should be:
+
+- I've been reading some on that topic...
+- ... and I see that there are several other ways to do that thing ...
+- ... and I'm going to code them up and see if they work better than DARE.
+
 Your job is to 
 
 - research alternate ways to implement any part of that  kit
 - implemenent on of them
-- compare them to FLASH
-- show where FLASH falls down
+- compare them to DARE
+- show where DARE falls down
 - make a recommendation about 
-   - when not to use FLASH and use something else
-   - how to improve FLASH to make it let your better thing.
-   - how to improve the better thing to make it more like FLASH
+   - when not to use DARE and use something else
+   - how to improve DARE to make it let your better thing.
+   - how to improve the better thing to make it more like DARE
 
-Now, of course, you should expect to do better than FLASH. FLASH
+Now, of course, you should expect to do better than DARE. DARE
 is a one-size-fits all tool designed with a "near enough is good
 enough" attitude. Specific tools often do better
 on specific data sets.  So consider yourself a success if
-you prove FLASH a failure!
+you prove DARE a failure!
