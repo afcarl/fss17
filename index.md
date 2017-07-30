@@ -43,7 +43,7 @@ Apply SE principles to a data science problem.
 |_Comprehensible_ :|  Something we can read, argue with|
 |_Fast_ :|  Not a CPU hog|
 |_Light_ :| Small memory footprint |
-|_Goal-aware_ :| Different goals means different models. ANd multiple goals = no problem!|
+|_Goal-aware_ :| Different goals means different models. AND multiple goals = no problem!|
 |_Humble_ :|  Can publish succinct certification envelope (so we know when not to trust)|
 |_Context-aware_ :|  Knows that local parts of data ⇒ different models. Knows how to find different contexts|
 |_Privacy-aware_ :|  Can hide an individual's data|
@@ -52,14 +52,14 @@ Apply SE principles to a data science problem.
 |_Self-tuning_ :|  And can do it quickly|
 |_Incremental_ :|  Can update old models with new data|
 
-FYI: I have a basline tool for all of those. But most parts of it remain untested. And might want to use
+FYI: I have a baseline tool for all of those. But most parts of it remain untested. And might want to use
          the tool for inspiration rather then execution.
 
 # But What About "Big Data"?
 
 (Mostly) missing in this subject will be talk of Hadoop, MapReduce, ElasticSearch,
 Spark, TensorFlow, DeepLearning, MapReduce, AWS, Zeppelin, Kafka,
-and all the other system-level stabples of the standard Big Data
+and all the other system-level staples of the standard Big Data
 tool stack. These are all great tools  which you should,
 of course, learn and understand.  There are many fantastic on-line,
 freely-available, resources which can offer detailed tutorials on
@@ -72,7 +72,7 @@ And having supervised dozens of graduate students building and using those tools
 I assert that many of those leaps can be too far-fetched.
 
 Now many other people and much more trusting than me.
-THey 
+They 
 view data miners as perfect oracles that will deliver the "right" answer, which we will
 never need to question.
 
@@ -87,7 +87,7 @@ Spark, TensorFlow, DeepLearning, MapReduce, AWS, Zeppelin, Kafka, etc.
 
 The goal of this work is to destroy, or at least
 find limits with my prior work. As inputs for that task
-I offer LURE, a tool kit that ofers a baseline0 implementation
+I offer LURE, a tool kit that offers a baseline0 implementation
 of many of the tools that I think are important. 
 
 For everything I show you, your response should be:
@@ -99,7 +99,7 @@ For everything I show you, your response should be:
 Your job is to 
 
 - research alternate ways to implement any part of that  kit
-- implemenent on of them
+- implement on of them
 - compare them to LURE
 - show where LURE falls down
 - make a recommendation about 
