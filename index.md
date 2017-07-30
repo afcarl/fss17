@@ -54,34 +54,63 @@ Apply SE principles to a data science problem.
 
 FYI: I have a basline tool for all of those. But most parts of it remain untested. And might want to use
          the tool for inspiration rather then execution.
- 
+
+# But What About "Big Data"?
+
+(Mostly) missing in this subject will be talk of Hadoop, MapReduce, ElasticSearch,
+Spark, TensorFlow, DeepLearning, MapReduce, AWS, Zeppelin, Kafka,
+and all the other system-level stabples of the standard Big Data
+tool stack. These are all great tools  which you should,
+of course, learn and understand.  There are many fantastic on-line,
+freely-available, resources which can offer detailed tutorials on
+all the above (and if you want to prioritize, start with
+Zeppelin+TensorFlow+Spark).
+
+But here's the thing. I've been doing data mining for far too long to use these tools uncritically.
+Data mining tools as heuristics for taking wild leaps across a huge space of possible models.
+And having supervised dozens of graduate students building and using those tools,
+I assert that many of those leaps can be too far-fetched.
+
+Now many other people and much more trusting than me.
+THey 
+view data miners as perfect oracles that will deliver the "right" answer, which we will
+never need to question.
+
+- So, if you prefer (spurious) certainty, just study 
+Hadoop, MapReduce, ElasticSearch,
+Spark, TensorFlow, DeepLearning, MapReduce, AWS, Zeppelin, Kafka, etc.
+- But if, like me, you have doubts, then you want to know how to engineer environments that support the exploration and reduction of doubts. 
+  In which case, this subject is for you.
+
 
 # Student Goals
 
 The goal of this work is to destroy, or at least
 find limits with my prior work. As inputs for that task
-I offer DARE, a tool kit that ofers a baseline0 implementation
+I offer LURE, a tool kit that ofers a baseline0 implementation
 of many of the tools that I think are important. 
 
 For everything I show you, your response should be:
 
 - I've been reading some on that topic...
 - ... and I see that there are several other ways to do that thing ...
-- ... and I'm going to code them up and see if they work better than DARE.
+- ... and I'm going to code them up and see if they work better than LURE.
 
 Your job is to 
 
 - research alternate ways to implement any part of that  kit
 - implemenent on of them
-- compare them to DARE
-- show where DARE falls down
+- compare them to LURE
+- show where LURE falls down
 - make a recommendation about 
-   - when not to use DARE and use something else
-   - how to improve DARE to make it let your better thing.
-   - how to improve the better thing to make it more like DARE
+   - when not to use LURE and use something else
+   - how to improve LURE to make it let your better thing.
+   - how to improve the better thing to make it more like LURE
 
-Now, of course, you should expect to do better than DARE. DARE
+Now, of course, you should expect to do better than LURE. LURE
 is a one-size-fits all tool designed with a "near enough is good
 enough" attitude. Specific tools often do better
 on specific data sets.  So consider yourself a success if
-you prove DARE a failure!
+you prove LURE a failure!
+
+
