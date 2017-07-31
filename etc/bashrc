@@ -1,0 +1,98 @@
+load() { ## ## reload environment ## shell
+ . $Here/etc/bashrc
+}
+install() {
+  for p in aspell; do
+	  brew install $p
+  done
+  if  [ ! -d "$HOME/.vim/bundle/Vundle.vim" ]; then
+    git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
+    vim -u "$Here/etc/vimrc" -c 'PluginInstall' -c 'qa!'
+  fi
+  if [ ! -f "$Here/.gitignore" ]; then
+     cat <<EOF > "$Here/.gitignore"
+#vimstuff
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+netrwhist
+*~
+# doc stuff
+docs
+locco
+# mac stuff
+.DS_Store
+# testing stuff
+_allok.lua
+EOF
+  fi
+}
+bye() { ## ## push all to on-line repo ## git
+  gitting
+  git status
+  git commit -am "saving"
+  git push origin master
+}
+hi() { ## ## pull updates from on-line repo ## git
+  gitting
+  git push origin master
+}
+gitting() {
+	git config --global credential.helper cache
+	git config credential.helper 'cache --timeout=3600'
+	git config --global push.default simple
+}
+timm() { ## ## Private: sets up this repo for timm ## :install
+	git config --global user.name "Tim Menzies"
+	git config --global user.email tim.menzies@gmail.com
+}
+help() { ## ## show help ## misc
+  echo "${blue}"
+  grep '##' $Here/etc/bashrc | 
+  sort -t\# -k 7  | 
+  grep -v 'grep' |
+  gawk '  function trim(x) {
+            sub(/^[ \t]*/,"",x)
+            sub(/[ \t]*$/,"",x)
+            return x
+          }
+           BEGIN  { FS="##" }  
+          /BEGIN/ { next    }
+          { for(i=1;i<=NF;i++)
+               $i=trim($i)
+            pad="         "
+            gsub(/:/,"",$NF)
+            pre=  $NF==last ? pad : toupper($NF)":\n" pad
+            last=$NF 
+            gsub(/[(){]/,"",$1)
+            opts= NF==4 ? $2 : ""
+            text= NF==4 ? $3 : $2
+	    if ($3)
+	       printf("%s%-8s%-10s%s\n",pre,$1,opts,text)}
+              '
+  echo -n "${white}"
+}
+setup() {
+  alias ls='ls -G'
+  export LESS='-R'
+  export LESSOPEN='|$Here/etc/lessfilter %s'
+  Tag="FSS17"
+  _c1="\[\033[01;32m\]"
+  _c2="\[\033[01;34m\]"
+  _c3="\[\033[31m\]"
+  _c6="\033[33m"
+  _c5="\[\033[35m\]$"
+  _c0="\[\033[00m\]"
+  _c7="[\033]01;19\]"
+  red=$(tput setaf 1)
+  blue=$(tput setaf 6)
+  ltyl=$(tput setaf 11)
+  white=$(tput setaf 15)
+}
+here() { cd $1; basename "$PWD"; }
+promptcom() {
+  PROMPT_COMMAND='echo  -ne "${_c6}${Tag}\033]0;$(here ../..)/$(here ..)/$(here .)\007";PS1="${_c1}(\A) $(here ../..)/$_c2$(here ..)/$_c3$(here .) ${_c6}\!>${_c0}\e[m "'
+} 
+setup
+promptcom
