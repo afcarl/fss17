@@ -1,7 +1,11 @@
+vi() { ## FILE ## edit files using the FSS16 config stuff ## editor
+    vim -u "$Here/etc/vimrc" $*
+    echo "Done!"
+}
 load() { ## ## reload environment ## shell
  . $Here/etc/bashrc
 }
-install() {
+install() { ## ## init stuff (only needs to run once) ## :install
   for p in aspell; do
 	  brew install $p
   done
@@ -74,6 +78,7 @@ help() { ## ## show help ## misc
   echo -n "${white}"
 }
 setup() {
+  alias spell='aspell -H -c '
   alias ls='ls -G'
   export LESS='-R'
   export LESSOPEN='|$Here/etc/lessfilter %s'
@@ -96,3 +101,4 @@ promptcom() {
 } 
 setup
 promptcom
+help

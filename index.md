@@ -82,6 +82,12 @@ Spark, TensorFlow, DeepLearning, MapReduce, AWS, Zeppelin, Kafka, etc.
 - But if, like me, you have doubts, then you want to know how to engineer environments that support the exploration and reduction of doubts. 
   In which case, this subject is for you.
 
+## Aside
+
+(Of course, the above could be criticized as a trite dichotomy, that
+it  may be  possible to use the Big Data tools to implement the operators
+described above. That would be a good project for this subject.)
+
 
 # Student Goals
 

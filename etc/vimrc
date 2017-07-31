@@ -68,8 +68,11 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 
-let g:airline#extensions#clock#format = 'TIME= %H:%M'
+"let g:airline#extensions#clock#format = 'TIME= %H:%M'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -95,3 +98,4 @@ map <F1> :find
 "nmap <F8> :TagbarToggle<CR>
 nnoremap <leader>ev :split $MYVIMRC<CR>  
 nnoremap <leader>sv :source $MYVIMRC<CR>     
+set foldlevel=99
