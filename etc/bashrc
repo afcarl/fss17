@@ -114,7 +114,7 @@ cat<<'EOF'
 EOF
 echo -n "${white}"
 }
-banner
 setup
 promptcom
+banner
 help
