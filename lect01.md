@@ -1,5 +1,6 @@
 ---
 title: Lecture1 (6 times)
+published: true
 ---
 
 
@@ -7,7 +8,7 @@ title: Lecture1 (6 times)
 
 Six introductions, the last one actually has engineering principles.
 
-The rest are "just" poetry, thigns I need to get out of my system.
+The rest are "just" poetry, things I need to get out of my system.
 
 ## Beyond Magic
 
@@ -42,4 +43,3 @@ Regardless of the _how_, I hope you reflect much on the _why_ of the following;
 i.e.
 
 - no data mining without verification</em> and <em> before anything else, design for verification</em>.
-
