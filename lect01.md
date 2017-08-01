@@ -53,11 +53,31 @@ data structures and algorithms. You can, and you should, critize those choices
 Regardless of the _how_, I hope you reflect much on the _why_ of the following;
 i.e.
 
-- no data mining without verification</em> and <em> before anything else, design for verification</em>.
+- _no data mining without verification _ and  
+- _before anything else, design for verification_.
 
+### Discretization, feature selection
 
-Data mining is compression. From clustered data, we only need share  exemplars (e.g. N random items per centroid).
+When explaining things to business users, 
 
-- Wrong if inference from exemplars worse than inference from all data. FYI, current evidence = not wrong:
+### Instance selection
+
+Find groups of data where conclusions are different
+
+From clustered data, we only need share  exemplars (e.g. N random items per centroid).
+
+- **Bad idea if** inference from exemplars worse than inference from all data. FYI, current evidence = not wrong:
      - [Vasil's data carving thesis {username=password=guest}](http://unbox.org/things/var/vasil/thesis/thesis-v3.pdf (username=password=guest)
      - [Vivek's configuration sampling work](https://arxiv.org/pdf/1701.08106.pdf)
+     
+### Mutate (a little) prior to sharing
+
+(Fayola's approach](http://menzies.us/pdf/15lace2.pdf). To hide individuals:
+
+- Find everyone's nearest unlike neighbor
+- Mutate by a random amount up to, but not more than, halfway to that neighbor
+
+### Who are these people:
+
+- Vas
+
