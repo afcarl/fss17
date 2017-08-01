@@ -2,6 +2,9 @@ vi() { ## FILE ## edit files using the FSS16 config stuff ## editor
     vim -u "$Here/etc/vimrc" $*
     echo "Done!"
 }
+spell() { ## FILE.md ## spell check markdown file ## editor
+ aspell -H -c $*
+}
 load() { ## ## reload environment ## shell
  . $Here/etc/bashrc
 }
@@ -78,7 +81,6 @@ help() { ## ## show help ## misc
   echo -n "${white}"
 }
 setup() {
-  alias spell='aspell -H -c '
   alias ls='ls -G'
   export LESS='-R'
   export LESSOPEN='|$Here/etc/lessfilter %s'
