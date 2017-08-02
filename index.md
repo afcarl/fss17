@@ -32,7 +32,7 @@ Do this subject, learn answers to those questions, become the data scientist eve
 
 Apply SE principles to a data science problem. 
 
-- Implement add any of the operators listed on slide 9 of [this tutorial](http://tiny.cc/timm) (and listed below) to any 
+- Implement add any of the operators listed on slide 9 of [this tutorial](http://tiny.cc/timm17vic) (and listed below) to any 
   data science problem 
 - Ideally one from SE but i can be flexible on that. e.g. if you are doing X in your thesis, then we can apply all this to X.
 
