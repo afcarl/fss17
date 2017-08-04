@@ -16,6 +16,10 @@ use Standard Deviation
 
 ## Expected Value
 
+## Argmax
+
+## Argmin
+
 ### Ranking
 
 ### Supervised Ranking
@@ -50,6 +54,12 @@ E.g. Euclidean metric
 E.g. Minkowski metric (at n=1,2 this becomes Manhatten, Euclidean metric)
 
     d(x,y) = sum(  ( x[i] - y[i] )^n )^(1/n)
+
+## Better(s)
+
+Boolean domination
+
+Indicator domination (also called continuous domination).
 
 ## Equality
 
