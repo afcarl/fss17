@@ -14,5 +14,5 @@ _Errāre hūmānum est._  (To err is human.)
 -- Voltaire.
 
 <em>Give me the fruitful error any time, full of seeds, bursting with its own corrections. You can keep your sterile truth for yourself.</em>  
--Vilfredo Pareto
+-- Vilfredo Pareto
 

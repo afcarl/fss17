@@ -3,6 +3,8 @@ title: How
 published: true
 ---
 
+## What is Missing in Data Repositories?
+
 Consider an operating system that can schedule processes, but has
 no editors, compilers, file system, network support, ports, memory
 management, gui, etc. Would you use that operating?
@@ -15,10 +17,63 @@ want my data repositories to be forums within which communitie can
 curate, critique and even improve the conclusions drawn from data.
 
 What would that extra layer of tools look like? 
+Well there are many possible answers and the following are just some.
+Students of this subject should be very critical of the following 
+implementation ideas-- they are just one approach and they should
+feel free to explore many more.
 
-Science has escaped the lab 
-and    roaming free in the world.
+## The Elbow Test
 
+A model passes the elbow test if, when displayed,
+analysts are elbowed out of the way by
+users in their haste to point to flaws on the display.
+
+For this to work, models must be _readable_. Readable things are _NOT_ tediously long. There are many ways to reduce the size of a model:
+
+### Unsupervised Discretization
+
+Numeric ranges can be approxiated with a few  straight
+line segments.
+
+For example, suppose we sorted 100 numbers drawn from 
+`R<sup>2</sup>`
+where `R` is a random number drawn from 0..1 so 
+`R<sup>2</sup>`  has a mean of about 0.25. 
+
+As shown below, the red dots mark the verticies os a set
+of points which, if connected with straight lines,
+approximate that `R<sup>2</sup>` with a very high
+correlation. 
+
+![](img/unsuper.png)
+
+These dots were found using the following rules
+
+- Let the standard deviation of the whole population be _sd_;
+- Let "epsilon" be _sd*0.5_ (which is one of [Cohen's rules](https://en.wikipedia.org/wiki/Effect_size#Cohen.27s_d))
+     - Cohen defines small,medium,large to be sd*d_ where 
+        _d &isin; \in (0.2,0.5,1)_. 
+- Let "enough" numbers be the number of values, rasised to 0.5 
+     - (which is one of [Webb's rules](); another of which is
+       _enough=30_).
+- Let the max and min value of each range be _&ge; epsilon_;
+- Let the number of items in  a range be _&ge; enough_.
+- Let the max value of one range be less than the min value
+  of the next.
+
+### Supervised Discretization
+
+Suppose we are watching variable one to understand its
+effect on variable two. Suppose further:
+
+- we have used unsupervised
+discretization to find ranges in variable one
+- we find that variable two is very similar in some
+  of the ranges of variable one
+- then we could safely combine variable two ranges
+
+apply unsupervised discretization to remove spurious numerics
+2.  apply supervised discretization to combine
 
 These days,
 anyone can be a scientist (making generalizations from data)  by

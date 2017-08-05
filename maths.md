@@ -37,6 +37,9 @@ Accuracy, precision, recall, false alarm, AUC, Popt, etc
 
 RE, MRE, medMRE, MMRE, SA, etc
 
+
+correlation. the ward test
+
 ## Distance
 
 Metrics space
@@ -76,6 +79,11 @@ Indicator domination (also called continuous domination).
 ## Equality
 
 For single values, easy!
+
+small medium large difference
+
+- parametric: cohen
+- non-parametric: cliff's delta
 
 But when comapring sets of numbers, must study set overlap (something studies extensively in statistics).
 
