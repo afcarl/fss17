@@ -30,6 +30,8 @@ users in their haste to point to flaws on the display.
 
 For this to work, models must be _readable_. Readable things are _NOT_ tediously long. There are many ways to reduce the size of a model:
 
+- Unsuerpvised discretion: replace long list sof numbers
+  with just a few `ranges`
 ### Unsupervised Discretization
 
 Numeric ranges can be approxiated with a few  straight
