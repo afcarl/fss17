@@ -13,6 +13,9 @@ use Entropy or Gini
 
 use Standard Deviation
 
+## CDF
+
+### Natural Range
 
 ## Expected Value
 
@@ -55,9 +58,18 @@ E.g. Minkowski metric (at n=1,2 this becomes Manhatten, Euclidean metric)
 
     d(x,y) = sum(  ( x[i] - y[i] )^n )^(1/n)
 
+Max distance across a hypercube
+
+Normalized distance
+
+Projections, cosine rule
+- note, now N dimensions are one.
+
 ## Better(s)
 
 Boolean domination
+- fine for low dimensions.
+- not so good for higher (graphic from abdel's paper)
 
 Indicator domination (also called continuous domination).
 
