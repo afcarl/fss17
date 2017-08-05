@@ -1,4 +1,3 @@
-
 ---
 title: How
 published: true
