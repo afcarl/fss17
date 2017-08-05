@@ -3,14 +3,6 @@ title: How
 published: true
 ---
 
-- _Errāre hūmānum est._  (To err is human.)   
-  -- Anonomous Latin person.
-- _If a little knowledge is dangerous, where is the man (sic) who has so much as to be out of danger_?  
-  -- T.H. Huxley
-- <em>We are all fallible, and prone to error; let us then
-  pardon each other's folly. This is the first principle of natural right. </em> 
-  -- Voltaire.
-
 Consider an operating system that can schedule processes, but has
 no editors, compilers, file system, network support, ports, memory
 management, gui, etc. Would you use that operating?
