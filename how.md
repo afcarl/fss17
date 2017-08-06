@@ -3,6 +3,43 @@ title: How
 published: true
 ---
 
+## Trust issues (with software)
+
+<img src="http://www.publicdomainpictures.net/pictures/80000/t2/silhouette-boy-with-hands-up.jpg" align=left width=300>
+Put your hand up if you are worried about the
+increasing use of of
+software (and especially data mining software) to control, well, everything; e.g.
+
+- Nobel-prize winning chemists use software  [to make their discoveries](http://goo.gl/Lwensc); 
+- Engineers use software to [designs many thing]( http://goo.gl/qBMyIZ)
+  including optical tweezers, radiation therapy, remote sensing,  chip design;  
+- Web analysts use software  to analyze clickstreams to [improve sales and marketing strategies](http://goo.gl/b26CfY);
+- Stock traders write software to [simulate trading strategies](http://www.quantopian.com);
+- Analysts write software  to mine   labor statistics data to [review proposed gov policies](http://goo.gl/X4kgnc);
+- Journalists use software   to analyze economic data, make visualizations [of their news stories](http://fivethirtyeight.com);
+- In London or New York,  ambulances wait for your call at a location [determined by a software model](http://goo.gl/8SMd1p).
+- Etc etc etc  
+
+
+In this century, much of what we can see and what we can do is selected and mediated and
+controlled  and restricted by software.  This is a worry since
+humans screw things up, [all the
+time](https://en.wikipedia.org/wiki/List_of_cognitive_biases),
+particualrly when [designing or building or using
+software](http://seclists.org/risks/).
+So how can we  trust  all that software?
+How can
+we tune it to our specific needs? How can we recognize when we should not use it?
+
+
+## Trusting what we learn from data miners
+
+In the general case of all softwware, I have little to say since "all software" is a very wide range of stuff.
+But in the specific case of data mining software, there are very specific (and simple and general) things
+we can do to increase the odds that person2 can critique and improve the models build my person1.
+
+
+
 ## What is Missing in Data Repositories?
 
 Consider an operating system that can schedule processes, but has
