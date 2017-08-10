@@ -3,6 +3,21 @@ title: Maths
 published: true
 ---
 
+## Functions
+
+dependent, indepnednt variables
+
+n dependent: multi-objective
+
+## Top-down Bi-cluster
+
+scott knott
+
+unsupervised descritization
+
+decision tre eelarning
+
+
 ## Variability
 
 ### For Symbols
