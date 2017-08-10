@@ -6,19 +6,16 @@ Video:
 
 - [Watch](https://www.youtube.com/watch?v=vJG698U2Mvo)
 
-<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
-<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
-<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
-<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
-<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
-<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
-<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
-<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
-<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
-<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
-<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
-<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
-<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
+<p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp;</p>
+<p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp;</p>
+<p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp;</p>
+<p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp;</p>
+<p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp;</p>
+<p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp;</p>
+<p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp;</p>
+<p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp;</p>
+<p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp;</p>
+<p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp;</p>
 
 Lessons:
 
