@@ -1,6 +1,3 @@
-
-
-
 ---
 title: War Story 2: Feature Selection
 published: true
