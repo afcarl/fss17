@@ -4,7 +4,8 @@ title: War Story 0b: Humans are Stupid?
 
 Video:
 
-- https://www.youtube.com/watch?v=vJG698U2Mvo
+- [Watch](https://www.youtube.com/watch?v=vJG698U2Mvo)
+
 <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp;
 <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp;
 <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp;
@@ -18,6 +19,13 @@ Video:
 <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp;
 <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp;
 <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp;
+
+Lessons:
+
+- Bias makes us blind, but bias lets us see (the future).
+- Without bias, we don't know what to throw away. We can't summarize our experience into a model.
+- Without a model we can't say what happenned before, what might happen in the future.
+- Bias makes us blind, but bias lets us see (the future).
 
 Referances:
 
