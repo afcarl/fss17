@@ -4,13 +4,12 @@ published: true
 ---
 
 
-CSC 591-023 (10722)
-CSC 791-023 (11162)
-Tues/Thurs 4:30 to 5:45
-Mid-session exam week 10 (on terminology) 
-No final exam. 
-EE III, Room 	2232 Engineering Building 3 
-Tuesday, Thursday, 4:30 to 5:45pm  
+CSC 591-023 (10722)  
+CSC 791-023 (11162)   
+Tues/Thurs 4:30 to 5:45     
+EE III, Room 	2232 Engineering Building 3    
+Mid-session exam week 10 (on terminology)   
+No final exam.  
 
 ### Overview
 
@@ -125,11 +124,14 @@ The mid-term exam will be on Tues Oct 17 (1 hour, rest of class canceled).
 ### Homeworks  and Project
 
 Schedule:
-  - August  will be introductory lectures.
+
+- August  will be introductory lectures.
   - Semi-weekly homeworks start Aug 29 and are due Aug29, Sept12, Sept10,Sept26, Oct5.
   - October is for the big project, due Nov 14
   - November is for the big essay on current directions in software science, due Dec1. 
       - Meanwhile, all groups will present their work (each talk= 15 minites) 
+
+Homeworks:
 
 + All deliverables are group-based (one deliverable per group)
   + 500-level students: groups of three
