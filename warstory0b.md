@@ -1,5 +1,5 @@
 ---
-title: War Story 0b: Humans are Stupid?
+title: War Story 0b- Humans are Stupid?
 published: true
 ---
 

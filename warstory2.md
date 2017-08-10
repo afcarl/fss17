@@ -1,5 +1,5 @@
 ---
-title: War Story 2: Feature Selection
+title: War Story 2- Feature Selection
 published: true
 ---
 

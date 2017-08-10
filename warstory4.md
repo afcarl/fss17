@@ -1,5 +1,5 @@
 ---
-title: War Story 4: The Best Report is... Quirky
+title: War Story 4- The Best Report is... Quirky
 published: true
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: War Story 3: Problems with Precision 
+title: War Story 3- Problems with Precision 
 published: true
 ---
 
