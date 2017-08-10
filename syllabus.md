@@ -4,7 +4,7 @@ published: true
 ---
 
 
-CSC 591-023 (10722)  
+CSC 591-023 (10722)   
 CSC 791-023 (11162)   
 Tues/Thurs 4:30 to 5:45     
 EE III, Room 	2232 Engineering Building 3    
