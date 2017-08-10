@@ -6,19 +6,19 @@ Video:
 
 - [Watch](https://www.youtube.com/watch?v=vJG698U2Mvo)
 
-<p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp;
-<p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp;
-<p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp;
-<p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp;
-<p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp;
-<p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp;
-<p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp;
-<p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp;
-<p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp;
-<p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp;
-<p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp;
-<p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp;
-<p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp; <p>&nsbp;
+<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
+<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
+<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
+<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
+<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
+<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
+<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
+<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
+<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
+<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
+<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
+<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
+<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
 
 Lessons:
 
