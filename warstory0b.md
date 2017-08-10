@@ -17,14 +17,14 @@ Video:
 <p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp;</p>
 <p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp; </p><p>&nbsp;</p>
 
-Lessons:
+Lessons :
 
 - Bias makes us blind, but bias lets us see (the future).
 - Without bias, we don't know what to throw away. We can't summarize our experience into a model.
 - Without a model we can't say what happenned before, what might happen in the future.
 - Bias makes us blind, but bias lets us see (the future).
 
-Referances:
+References:
 
 - Wikipedia [List of cognitive biases](https://en.wikipedia.org/wiki/List_of_cognitive_biases)
 - Daniel J Simons, Christopher F Chabris, 
