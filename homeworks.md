@@ -248,7 +248,7 @@ something like this:
     
 #### (e) Contrast sets
 
-Example code: [constrats](https://lualure.github.io/info/contrasts.html)
+Example code: [contrasts](https://lualure.github.io/info/contrasts.html)
 
 Our contrast learner will examine each pair of nodes in the decision tree and report
 the `delta` and `effect` between each node in a pair
