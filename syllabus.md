@@ -107,7 +107,7 @@ Grades will be added together using:
 
 
 + Homeworks : 25 marks (5 homerowks  5 marks each)
-+ Exam week 10 (on terminology): 15  marks
++ Mid-term Exam week 10 (on terminology): 15  marks
 + Paper (on current  directions in foundations of software science): 20 marks
     - Masters students have to survey existing approaches 
     - Ph.D. students must (a) survey _and_ (b) critically evaluate _and_ (c) propose
@@ -118,7 +118,7 @@ Grades will be added together using:
     - Ph.D. students have to (a) motivate their work and (b) demonstrate more than one working systemsand
       (c) critically compare and contrasts these N methods.
 
-The mid-term exam will be on Tues Oct 17 (1 hour, rest of class canceled).
+The mid-term exam will be on Tues Oct 17 (80 minutes long)
 
 
 ### Homeworks  and Project
