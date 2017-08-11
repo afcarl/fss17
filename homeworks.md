@@ -15,6 +15,8 @@ There are two paths to this.
     - Rather, you will treat the LUA code as a specification
     - That you will recode in Python, Ruby, JAVA (not recommended) etc.
 
+------
+
 ###  Path1: Pure LUA (for a few of you)
 
 
@@ -41,6 +43,7 @@ Sept12, Sept19, Sept26, Oct5
 
 There exist numerous open task needed for my group size	code 1: Aug29	code 2: sept12	code 3: Sept19	code 4: Sept 26	code 5: Oct5
 
+------
 ### Path2: Un-LUA-ed (for most of you)
 
 Your task is to generate the  (e) the contrast sets between (d) the regression  trees learned
