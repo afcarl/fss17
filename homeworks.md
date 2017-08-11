@@ -20,15 +20,16 @@ There are two paths to this.
 
 Aug29: 
 
-- Port https://gist.github.com/jasonkeene/2140276 to LUA
+- Port [https://gist.github.com/jasonkeene/2140276s](https://gist.github.com/jasonkeene/2140276)
+  to LUA
 - Add command line arguments to control size of display
 - Add a command line argument to randomly set each cell to be alive on pop0 at probability `p`.
 - Add a subdirectory contain a set of some patterns (so at the command line you can
   "start with this pattern file"
 - See if you can duplicate the behavior of 
-     - http://conwaylife.appspot.com/pattern/cap
-     - http://conwaylife.appspot.com/pattern/cheptomino
-     - http://conwaylife.appspot.com/pattern/achimsp8
+     - [cap](http://conwaylife.appspot.com/pattern/cap)
+     - [cheptomino](http://conwaylife.appspot.com/pattern/cheptomino)
+     - [achmisp8](http://conwaylife.appspot.com/pattern/achimsp8)
 
 Sept12, Sept19, Sept26, Oct5
 
@@ -93,8 +94,8 @@ say that row1 has the "right" length).
 
 Tests:
 
-- Report runtimes loading in https://github.com/lualure/src/blob/master/data/POM3A.csv.
-- For https://github.com/lualure/src/blob/master/data/POM3A.csv, add in many bad rows and have 
+- Report runtimes loading in [POM3a](https://github.com/lualure/src/blob/master/data/POM3A.csv).
+- For [POM3a](https://github.com/lualure/src/blob/master/data/POM3A.csv), add in many bad rows and have 
   the code print out error messages from those lines
 
 ### (b) Reading tables of data
@@ -123,7 +124,7 @@ uses `dominate` and `dominate1` in
 [Row](https://lualure.github.io/info/Row.html)
 
 Test: Find and print the top and bottom ten rows of
-https://github.com/lualure/src/blob/master/data/auto.csv, as sorted
+[auto.csv](https://github.com/lualure/src/blob/master/data/auto.csv), as sorted
 by their `dom` score. with the top 5 and the bottom 5 domination
 scores.  That print out will look something like this (you dont'
 need to emulate this, just get the same info):
@@ -152,8 +153,8 @@ first 5.
 
 Example LUA code:
 
-- unsupervised Discretization: https://lualure.github.io/info/range
-- supervised Discretization: https://lualure.github.io/info/superrange
+- unsupervised Discretization: [range](https://lualure.github.io/info/range)
+- supervised Discretization: [superrange](https://lualure.github.io/info/superrange)
 
 _Unsupervised Discretization_
 Write code that takes a table column of `N` numbers, sorts in, and breaks into bins of size approximately `sqrt(N)`. Note that these
@@ -246,7 +247,7 @@ something like this:
     
 #### (e) Contrast sets
 
-Example code: https://lualure.github.io/info/contrasts.html
+Example code: [constrats](https://lualure.github.io/info/contrasts.html)
 
 Our contrast learner will examine each pair of nodes in the decision tree and report
 the `delta` and `effect` between each node in a pair
