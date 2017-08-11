@@ -41,8 +41,6 @@ Sept12, Sept19, Sept26, Oct5
 - Each week, close some issues.
 - Repeat, four times.
 
-There exist numerous open task needed for my group size	code 1: Aug29	code 2: sept12	code 3: Sept19	code 4: Sept 26	code 5: Oct5
-
 ------
 ### Path2: Un-LUA-ed (for most of you)
 
