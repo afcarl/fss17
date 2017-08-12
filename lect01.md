@@ -68,6 +68,16 @@ Been helping a lot of people do data mining for a long time (PROMISE).
 
 Get cited, a lot (citations = Facebook likes; we all complain about them; we all like it when it is us).
 
+
+## Mash up rule
+
+much commonality within a learner
+
+by the time you build a table reader and sort out your column tracking 
+then(e.g.) knn and NB are very small variations of each other.
+
+so as software engienerings, we need to study the design patterns of data miners
+
 ## Seeking Insights
 
 So if biases cannot be avoid, and those biases get very complex and arcane, what does it mean to "vertify" a data miner?
