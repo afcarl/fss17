@@ -11,20 +11,58 @@ The rest are "just" poetry, things I need to get out of my system.
 
 ## Inspiration
 
-What is learned at university? Is it techniques (that  age and whither in 2-5 years), tools (that become out-dated tomorrow)?
-Or is it _inspiration_? Fuel for a lifetime of thought and accomplishment? Ways to thing differently, to stand out
-in the crowd. To boldly go where no one has gone before (ok, that last one was probably a metaphor too far...).
+What is learned at university? Is it techniques (that  age and
+whither in 2-5 years), tools (that become out-dated tomorrow)?  Or
+is it _inspiration_? Fuel for a lifetime of thought and accomplishment?
+Ways to thing differently, to stand out in the crowd. To boldly go
+where no one has gone before (ok, that last one was probably a
+metaphor too far...).
 
-Now I know that 10 years out from university, you will only retain 10% of all those ideas you sampled
-at univesity. But if you start with nothing, you'll end up with 10% of nothing, which is still nothing. So while
-at university, collect as many crazy ideas as you can. Hence this subject.
+Now I know that 10 years out from university, you will only retain
+10% of all those ideas you sampled at univesity. But if you start
+with nothing, you'll end up with 10% of nothing, which is still
+nothing. So while at university, collect as many crazy ideas as you
+can. Hence this subject.
 
-XXX need to be more cautios )(verification)
+"Education is not the filling of a pail, but the lighing of a fire"    
+-- William Yates
 
-XXXX need to be more adverntous. maybe ive been doing tjhis too long but the more i do "
-data mining" the more i realize its core algorithms can be used for other tasks. stop calling to "data mining" sart dalled int "idea engineering" I dunno
+"If the world merely lived up to our wildest dreams, what a dull place it would be. Happily..."
+-- Tim Menzies
 
-## Slogans
+"The best thing for being sad," replied Merlin, beginning to puff
+and blow, "is to learn something. That's the only thing that never
+fails. You may grow old and trembling in your anatomies, you may
+lie awake at night listening to the disorder of your veins, you may
+miss your only love, you may see the world about you devastated by
+evil lunatics, or know your honour trampled in the sewers of baser
+minds. There is only one thing for it then — to learn. Learn why
+the world wags and what wags it. That is the only thing which the
+mind can never exhaust, never alienate, never be tortured by, never
+fear or distrust, and never dream of regretting. Learning is the
+only thing for you. Look what a lot of things there are to learn."    
+-― T.H. White, The Once and Future King
+
+## Need to be more ambitious
+
+Him: "Hey Timm, I've got this great new on-line machine learning platform where researchers can log on and do
+really fast queries over complex SE data."
+
+Me: "Cool. But does it support XYZ..." (long list of "operators" follow)
+
+Him: "er.. no..."
+
+Me: "It really should. I've been doing data mining for years and I'm pretty sure that XYZ are the things
+we really need."
+
+Him: "But my tool is a base system on top of which the services you describe could be built."
+
+Me: "Sure, whatever. Everyone says that. But no one does it. Its like everyone succeeeds at primary school
+data mining and then stops maturing their ideas and expectations about data miners. You need to START with XYZ."
+
+Him: "I don't think so. I'll just go talk to that person over there now..."
+
+## Need to be more Cautious
 
 
 Limits to test = limits to build ([My PhD](http://menzies.us/pdf/95thesis.pdf)
@@ -58,6 +96,64 @@ within data mining. Why? Cause they use these tools "black box" with no poking a
 inhereting all the biases of the specific case studies used to set up their tools. And are those biases appropriate
 for your problem? You won't know unless you look around.
 
+
+
+## Not Data Mining, But "Idea Engineering"
+
+(Note to those who know data mining: in the following "bit" == "cluster" and "delta"=="contrast set".)
+
+Much commonality within a learner
+
+By the time you build a table reader and sort out your column tracking 
+then (e.g.) knn and NB are very small variations of each other.
+
+So as software engienerings, we need to study the design patterns of data miners
+
+
+The thing  we call "data mining", isn't that at all.
+
++ Its a way to explore the world, to divide into bits your like and bits you don't then to
+    - Then you can learn thing specific to each bit
+    + Also, if you have some really slow processing, you can speed things up by just applying them to the leaves
++ It turns out that the contrasts between things can be a very short list
+    - So you can learn _minimal descriptions_ about the differences between bits
++ If you know how to score the bits, you can describe a _landsscape_ of _slopes_ between bits you like and otherwise:
+     + The delta towards the bits you like is a   _plan_  (of what you could do next).
+     + And the delta towards the bits you don't is a _monitor_  (of what to watch out for).
++ Another important landscape are _slopes_ between past and present bits
+     - If you were happy before and you are sad now then a _diagnosis_ is delta between
+       the bits from before and the bits now.
+    - The bits between what you saw before and what you see now are _anomalies_. 
+    - Anomalies are triggers that tell us its time to change our ideas.
+    -  If the bits are divided hierarchically, you usually  ever need to _revise_ the sub-bits with anomalies.
+of that hierachy.
++ Further, you can _compress_ the data by just keeping a few items in each bit.
++ Then you can _share_ the data by sharing the mutants, after a little _mutation_ (where you move
+  items no more than half way to the nearest other items in compressed space).
+
+It turns out the above is not just about data mining, but also about the internals of an optimizer.
+So you can use the above for soemthing called _hyperparameter optimization_ where you learn how to
+twiddle different bits.
+
+For more on this see, see [Idea Engineering](http://menzies.us/pdf/13promise.pdf).
+
+## Need More Science
+
+"Science" is the process of communities sharing and reviewing and
+improving each other’s ideas. Sadly, most "data science" is not about
+"science". Rather its about vendors selling you stuff that does not
+work properly and does not ring an alarm when it starts failing.  This
+is strange since an important part of knowledge is "no"; i.e. the
+ability to critically assess something, and to recognize when one idea
+is better, smarter, than another.
+
+So a million million people can run data miners. But how many now when
+those data miners start going wrong? And how to fix faulty models?
+Do this subject, learn answers to those questions. Become the data
+scientist everyone needs to consult with when things start going
+wrong.
+
+
 ## Why Listen to me?
 
 Been doing this for a while now (UNSW AI).
@@ -68,15 +164,6 @@ Been helping a lot of people do data mining for a long time (PROMISE).
 
 Get cited, a lot (citations = Facebook likes; we all complain about them; we all like it when it is us).
 
-
-## Mash up rule
-
-much commonality within a learner
-
-by the time you build a table reader and sort out your column tracking 
-then(e.g.) knn and NB are very small variations of each other.
-
-so as software engienerings, we need to study the design patterns of data miners
 
 ## Seeking Insights
 

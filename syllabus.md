@@ -35,18 +35,30 @@ wrong.
 + Report on complex technical  issues (written talk)
 
 
-**Lecturer:** Tim Menzies <img
+**Lecturer:** Tim Menzies (Prof)<img
 src="http://www.csc.ncsu.edu/enews/images/1770.jpg"
 align=right
 width=100>
 
 + Office Hours: Tuesday, 2:00-4:30 and by request
 + Location of Office Hours: EE II room 3298 
++ Slack name: timm
 + E-Mail: tim.menzies@gmail.com 
   + Only use this email for private matters. All other class communication should be via the class Slack group [http://fss17.slack.com](http://fss17.slack.com).
 + Phone: 304-376-2859
        + **Do not use** this number, except in the most dire of 
           circumstances (best way to contact me is via email).
+
+
+**Teaching assistant:** Di Chen (Jack, Ph.D. student)  <img
+src="http://dichen.me/images/professional_avatar.jpeg"
+align=right
+width=100>
+
+
++ Office Hours: Friday 8am to 10am
++ Location of Office Hours: EB2 3240
++ Slack name: jack\_chen
 
 
 
