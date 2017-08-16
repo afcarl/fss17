@@ -35,10 +35,9 @@ wrong.
 + Report on complex technical  issues (written talk)
 
 
-**Lecturer:** Tim Menzies (Prof)<img
-src="http://www.csc.ncsu.edu/enews/images/1770.jpg"
-align=right
-width=100>
+**Lecturer:** Tim Menzies (Prof)
+
+<img src="http://www.csc.ncsu.edu/enews/images/1770.jpg" align=right width=100>
 
 + Office Hours: Tuesday, 2:00-4:30 and by request
 + Location of Office Hours: EE II room 3298 
@@ -50,10 +49,9 @@ width=100>
           circumstances (best way to contact me is via email).
 
 
-**Teaching assistant:** Di Chen (Jack, Ph.D. student)  <img
-src="http://dichen.me/images/professional_avatar.jpeg"
-align=right
-width=100>
+**Teaching assistant:** Di Chen (Jack, Ph.D. student)  
+
+<img src="http://dichen.me/images/professional_avatar.jpeg" align=right width=100>
 
 
 + Office Hours: Friday 8am to 10am
