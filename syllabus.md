@@ -37,7 +37,7 @@ wrong.
 
 **Lecturer:** Tim Menzies (Prof)
 
-<img src="http://www.csc.ncsu.edu/enews/images/1770.jpg" align=right width=100>
+![](http://www.csc.ncsu.edu/enews/images/1770.jpg)
 
 + Office Hours: Tuesday, 2:00-4:30 and by request
 + Location of Office Hours: EE II room 3298 
@@ -51,7 +51,7 @@ wrong.
 
 **Teaching assistant:** Di Chen (Jack, Ph.D. student)  
 
-<img src="http://dichen.me/images/professional_avatar.jpeg" align=right width=100>
+![](http://dichen.me/images/professional_avatar.jpeg)
 
 
 + Office Hours: Friday 8am to 10am
