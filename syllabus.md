@@ -35,7 +35,8 @@ wrong.
 + Report on complex technical  issues (written talk)
 
 
-<img class="pure-img displayed"  align=right width=150 src="http://www.csc.ncsu.edu/enews/images/1770.jpg">
+<img class="pure-img displayed"  src="http://www.csc.ncsu.edu/enews/images/1770.jpg">
+
 **Lecturer:** Tim Menzies (Prof)
 
 
@@ -49,7 +50,8 @@ wrong.
           circumstances (best way to contact me is via email).
 
 
-<img class="pure-img displayed"  align=right width=150 src="http://dichen.me/images/professional_avatar.jpeg">
+<img class="pure-img displayed"  src="http://dichen.me/images/professional_avatar.jpeg">
+
 **Teaching assistant:** Di Chen (Jack, Ph.D. student)  
 
 
