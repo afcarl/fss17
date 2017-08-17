@@ -5,9 +5,7 @@ published: true
 
 # Why This Subject? 
 
-Six introductions, the last one actually has engineering principles.
 
-The rest are "just" poetry, things I need to get out of my system.
 
 ## Inspiration
 
@@ -19,12 +17,12 @@ where no one has gone before (ok, that last one was probably a
 metaphor too far...).
 
 Now I know that 10 years out from university, you will only retain
-10% of all those ideas you sampled at univesity. But if you start
+10% of all those ideas you sampled at university. But if you start
 with nothing, you'll end up with 10% of nothing, which is still
 nothing. So while at university, collect as many crazy ideas as you
 can. Hence this subject.
 
-"Education is not the filling of a pail, but the lighing of a fire"    
+"Education is not the filling of a pail, but the lighting of a fire"    
 -- William Yates
 
 "If the world merely lived up to our wildest dreams, what a dull place it would be. Happily..."
@@ -35,7 +33,7 @@ and blow, "is to learn something. That's the only thing that never
 fails. You may grow old and trembling in your anatomies, you may
 lie awake at night listening to the disorder of your veins, you may
 miss your only love, you may see the world about you devastated by
-evil lunatics, or know your honour trampled in the sewers of baser
+evil lunatics, or know your honor trampled in the sewers of baser
 minds. There is only one thing for it then — to learn. Learn why
 the world wags and what wags it. That is the only thing which the
 mind can never exhaust, never alienate, never be tortured by, never
@@ -43,26 +41,66 @@ fear or distrust, and never dream of regretting. Learning is the
 only thing for you. Look what a lot of things there are to learn."    
 -― T.H. White, The Once and Future King
 
+## Maturity
+
+I ran my first decision tree learner in 1980s. It was amazing: I saw structure dribbling out
+from samples of data. That was (and still is) thrilling to watch. Just imagine, with these data mining tools we can see  something no one has **ever** seen before.
+
+Decades later, that thrill remains. BUT. Now that that thrill is routine, that anyone can do that, you have to ask, what else is there?   Given all that experience with induction, what might we say about the nature of learning **now** that we did not know before?
+
+My answer to this question is that we have to move from data mining _worship_ to data mining _caution_. If everyone can use these tools to quickly build models, they everyone can quickly build crappy models. We need to way to _critique_ these models, to push back, to demand better models.
+
+So here's a little story on how to make a grown man cry:
+
+- Him: "Hey Timm, I've got this great new on-line machine learning platform where researchers can log on and do
+really fast queries over complex SE data."
+- Me: "Cool. But does it support XYZ..." (long list of "operators" follow)
+- Him: "er.. no..."
+- Me: "It really should. I've been doing data mining for years and I'm pretty sure that XYZ are the things
+we really need."
+- Him: "But my tool is a base system on top of which the services you describe could be built."
+- Me: "Sure, whatever. Everyone says that. But no one does it. Its like everyone succeeds at primary school
+data mining and then stops maturing their ideas and expectations about data miners. You need to START with XYZ."
+- Him: "I don't think so. I'll just go talk to that person over there now..."
+
+
+## Why Exactly should anyone ever Listen to me?
+
+Been doing this for a while now (UNSW AI).
+
+Seen a lot of software (NASA).
+
+Been helping a lot of people do data mining for a long time (PROMISE).
+
+Get cited, a lot (citations = Facebook likes; we all complain about them; we all like it when it is us).
+
+
+
 ## Need to be more ambitious
 
-(a.k.a how to make grown man cry)
+## Fear
 
-Him: "Hey Timm, I've got this great new on-line machine learning platform where researchers can log on and do
-really fast queries over complex SE data."
+Newbies think data mining is running simple queries like `age > 21`.
 
-Me: "Cool. But does it support XYZ..." (long list of "operators" follow)
+But the more you work it, the more intricate it becomes:
 
-Him: "er.. no..."
+- Choice of data, choice of goals, interaction with users, feedback from business users, choice of learners, data pre-processing, trying different learners, choice of statistical methods
+- [All these effect what gets learned](https://github.com/txt/ase15/blob/master/models/icse14-v5-min.py).
 
-Me: "It really should. I've been doing data mining for years and I'm pretty sure that XYZ are the things
-we really need."
+I've watched 100s of newbie graduate students botch up data miners. I know how badly they can screw up.
 
-Him: "But my tool is a base system on top of which the services you describe could be built."
+Now I'm watching continuous deployment people rush data miners into production, and when I check those data miners I can usually find **stuff** I think needs changing.
+ 
+Also I've also watched dozens of supposedly skilled data mining people screw it up (yours truly included), [discover supposedly important conclusions that, in fact, were just trite](https://pdfs.semanticscholar.org/ae7d/96ee5c7838343a7cf176d008cf3eaaeba1ef.pdf). We just need to accept it, humans are brilliant, but flawed. Human cognition is usually biased/blinded by a variety of factors (see below). Hence, I say: 
 
-Me: "Sure, whatever. Everyone says that. But no one does it. Its like everyone succeeeds at primary school
-data mining and then stops maturing their ideas and expectations about data miners. You need to START with XYZ."
+- all those decisions we make during data mining can actually contain numerous errors 
+- Even skilled users of these tools need someone(s) leaning over their shoulder, checking their results.
 
-Him: "I don't think so. I'll just go talk to that person over there now..."
+![](http://images.mentalfloss.com/sites/default/files/styles/insert_main_wide_image/public/cognitive_biases.png)
+
+(For a much longer list of human cognitive biases, see [Wikipedia](https://en.wikipedia.org/wiki/List_of_cognitive_biases).
+
+
 
 ## Need to be more Cautious
 
@@ -79,7 +117,7 @@ Therefore....
 
 Worse, data miners have "bugs", aka biases, [built into them](https://goo.gl/9ssteS). Without those biases, they cannot decide what to keep and what to ignore.
 If they cant prune much of their search space then they will never terminate.  So, by necessity, data miners are
-  skwed tools, possibly mis-directed.
+  skewed tools, possibly mis-directed.
 
 "But this is not correct", I think you might say, "how can a data query like the following bee biased?"
   
@@ -87,7 +125,7 @@ If they cant prune much of their search space then they will never terminate.  S
     WHERE Country='Mexico';`selct 
 
 Just consider: where does the data come from? How was it pre-processed? And there are 119,530,753
-people linving in Mexico (as of 2015). WHen this query returns millions of results, how will you sort and summarize
+people living in Mexico (as of 2015). When this query returns millions of results, how will you sort and summarize
 the results? When you show these results to anyone that needs to take action on this data, what
 aspects of those results will you stress or gloss over?
 
@@ -95,8 +133,8 @@ More generally,  data mining gets **much** more complicated that the above.
 
 - See
 the [source code](https://github.com/txt/ase15/blob/master/models/icse14-v5-min.py) used to get the results for [this paper](https://arxiv.org/pdf/1609.05563.pdf).
-- Consider the effectos of  
-Hyperparameter optimization,
+- Consider the effects of  
+Hyper-parameter optimization,
 discretization, spectral learning, visualizations, etc etc. 
 
 Most folks don't realize the vast range of options
@@ -115,7 +153,7 @@ Much commonality within a learner
 By the time you build a table reader and sort out your column tracking 
 then (e.g.) knn and NB are very small variations of each other.
 
-So as software engienerings, we need to study the design patterns of data miners
+So as software engineerings, we need to study the design patterns of data miners
 
 
 The thing  we call "data mining", isn't that at all.
@@ -125,7 +163,7 @@ The thing  we call "data mining", isn't that at all.
     + Also, if you have some really slow processing, you can speed things up by just applying them to the leaves
 + It turns out that the contrasts between things can be a very short list
     - So you can learn _minimal descriptions_ about the differences between bits
-+ If you know how to score the bits, you can describe a _landsscape_ of _slopes_ between bits you like and otherwise:
++ If you know how to score the bits, you can describe a _landscape_ of _slopes_ between bits you like and otherwise:
      + The delta towards the bits you like is a   _plan_  (of what you could do next).
      + And the delta towards the bits you don't is a _monitor_  (of what to watch out for).
 + Another important landscape are _slopes_ between past and present bits
@@ -134,13 +172,13 @@ The thing  we call "data mining", isn't that at all.
     - The bits between what you saw before and what you see now are _anomalies_. 
     - Anomalies are triggers that tell us its time to change our ideas.
     -  If the bits are divided hierarchically, you usually  ever need to _revise_ the sub-bits with anomalies.
-of that hierachy.
+of that hierarchy.
 + Further, you can _compress_ the data by just keeping a few items in each bit.
 + Then you can _share_ the data by sharing the mutants, after a little _mutation_ (where you move
   items no more than half way to the nearest other items in compressed space).
 
 It turns out the above is not just about data mining, but also about the internals of an optimizer.
-So you can use the above for soemthing called _hyperparameter optimization_ where you learn how to
+So you can use the above for something called _hyper-parameter optimization_ where you learn how to
 twiddle different bits.
 
 For more on this see, see [Idea Engineering](http://menzies.us/pdf/13promise.pdf).
@@ -149,8 +187,6 @@ For more on this see, see [Idea Engineering](http://menzies.us/pdf/13promise.pdf
 
 <img class="pure-img displayed"  src="https://github.com/txt/fss16/raw/master/img/science.png">
 
-
-# Why this subject?
 
 
 An important part of knowledge  is "no"; i.e. the ability to critically assess something, and to recognize when one idea  is better, smarter, than another.
@@ -227,48 +263,67 @@ _Incremental_:
 -  Anomaly detectors tell us something has to change.  Incremental learners tell us what to change.
 
 
-## Why Listen to me?
 
-Been doing this for a while now (UNSW AI).
+## But What About "Big Data"?
 
-Seen a lot of software (NASA).
+(Mostly) missing in this subject will be talk of Hadoop, MapReduce, ElasticSearch,
+Spark, TensorFlow, DeepLearning, MapReduce, AWS, Zeppelin, Kafka,
+and all the other system-level staples of the standard Big Data
+tool stack. These are all great tools  which you should,
+of course, learn and understand.  There are many fantastic on-line,
+freely-available, resources which can offer detailed tutorials on
+all the above (and if you want to prioritize, start with
+Zeppelin+TensorFlow+Spark).
 
-Been helping a lot of people do data mining for a long time (PROMISE).
+But here's the thing. I've been doing data mining for far too long to use these tools uncritically.
+Data mining tools as heuristics for taking wild leaps across a huge space of possible models.
+And having supervised dozens of graduate students building and using those tools,
+I assert that many of those leaps can be too far-fetched.
 
-Get cited, a lot (citations = Facebook likes; we all complain about them; we all like it when it is us).
+Now many other people and much more trusting than me.
+They
+view data miners as perfect oracles that will deliver the "right" answer, which we will
+never need to question.
 
+- So, if you prefer (spurious) certainty, just study
+Hadoop, MapReduce, ElasticSearch,
+Spark, TensorFlow, DeepLearning, MapReduce, AWS, Zeppelin, Kafka, etc.
+- But if, like me, you have doubts, then you want to know how to engineer environments that support the exploration and reduction of doubts.
+  In which case, this subject is for you.
 
-## Beyond Magic
+### Aside
 
-I ran my first decision tree learner in 1980s. It was amazing: I saw structure dribbling out
-from samples of data. That was (and still is) thrilling to watch. Just imagine, with these data mining tools we can see  something no one has **ever** seen before.
-
-Decades later, that thrill remains. BUT. Now that that thrill is routine, that anyone can do that, you have to ask, what else is there?   Given all that experience with induction, what might we say about the nature of learning **now** that we did not know before?
-
-My answer to this question is that we have to move from data mining _worship_ to data mining _nervousness_. If everyone can use these tools to quickly build models, they everyone can quickly build crappy models. We need to way to _critique_ these models, to push back, to demand better models.
-
-## Fear
-
-Newbies think data mining is running simple queries like `age > 21`.
-
-But the more you work it, the more intricate it becomes:
-
-- Choice of data, choice of goals, interaction with users, feedback from business uers, choice of learners, data pre-processing, trying different learners, choice of statistical methods
-- [All these effect what gets learned](https://github.com/txt/ase15/blob/master/models/icse14-v5-min.py).
-
-I've watched 100s of newbie graduate students botch up data miners. I know how badly they can screw up.
-
- 
-I've also watched dozens of supposedly skilled data mining people screw it up (yours truly included), [discover supposedly important conclusions that, in fact, were just trite](https://pdfs.semanticscholar.org/ae7d/96ee5c7838343a7cf176d008cf3eaaeba1ef.pdf). We jsut need to accept it, humans are brilliant, but flawed. Human cognition is usually biased/blinded by a variety of factors (see below). Hence, I say: 
-
-- all those decisions we make during data mining can actually contain numerous errors 
-- Even skilled users of these tools need someone(s) leaning over their shoulder, checking their results.
-
-![](http://images.mentalfloss.com/sites/default/files/styles/insert_main_wide_image/public/cognitive_biases.png)
-
-(For a much longer list of human cognitive biases, see [Wikipedia](https://en.wikipedia.org/wiki/List_of_cognitive_biases).
-
-## Worried about Continuous Deloymemt
+(Of course, the above could be criticized as a trite dichotomy, that
+it  may be  possible to use the Big Data tools to implement the operators
+described above. That would be a good project for this subject.)
 
 
+## Student Goals
 
+The goal of this work is to destroy, or at least
+find limits with my prior work. As inputs for that task
+I offer LURE, a tool kit that offers a baseline0 implementation
+of many of the tools that I think are important.
+
+For everything I show you, your response should be:
+
+- I've been reading some on that topic...
+- ... and I see that there are several other ways to do that thing ...
+- ... and I'm going to code them up and see if they work better than LURE.
+
+Your job is to
+
+- research alternate ways to implement any part of that  kit
+- implement on of them
+- compare them to LURE
+- show where LURE falls down
+- make a recommendation about
+   - when not to use LURE and use something else
+   - how to improve LURE to make it let your better thing.
+   - how to improve the better thing to make it more like LURE
+
+Now, of course, you should expect to do better than LURE. LURE
+is a one-size-fits all tool designed with a "near enough is good
+enough" attitude. Specific tools often do better
+on specific data sets.  So consider yourself a success if
+you prove LURE a failure!

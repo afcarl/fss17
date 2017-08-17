@@ -13,7 +13,6 @@ No final exam.
 <img class="pure-img displayed"  src="https://github.com/txt/fss16/raw/master/img/science.png">
 
 
-# Why this subject?
 
 
 An important part of knowledge  is "no"; i.e. the ability to critically assess something, and to recognize when one idea  is better, smarter, than another.
@@ -26,97 +25,12 @@ So a million million people can run data miners. But how many  now when those da
 Do this subject, learn answers to those questions, become the data scientist everyone needs to consult with  when things start going wrong.
 
 
- 
+## Updates
 
-# Project
+(latest listed first)
 
-Apply SE principles to a data science problem. 
+Lectures: 
++ [One](lect01); 
 
-- Implement add any of the operators listed on slide 9 of [this tutorial](http://tiny.cc/tim17vic) (and listed below) to any 
-  data science problem 
-- Ideally one from SE but i can be flexible on that. e.g. if you are doing X in your thesis, then we can apply all this to X.
-
-
-  
-|Operator | Notes|
-|------:|--------|
-|_Comprehensible_ :|  Something we can read, argue with|
-|_Fast_ :|  Not a CPU hog|
-|_Light_ :| Small memory footprint |
-|_Goal-aware_ :| Different goals means different models. AND multiple goals = no problem!|
-|_Humble_ :|  Can publish succinct certification envelope (so we know when not to trust)|
-|_Context-aware_ :|  Knows that local parts of data ⇒ different models. Knows how to find different contexts|
-|_Privacy-aware_ :|  Can hide an individual's data|
-|_Anomaly-aware_ :|  Can detect when new inputs differ from old training data|
-|_Shareable_ :|  Knows how to transfer models, data, between contexts|
-|_Self-tuning_ :|  And can do it quickly|
-|_Incremental_ :|  Can update old models with new data|
-
-FYI: I have a baseline tool for all of those. But most parts of it remain untested. And might want to use
-         the tool for inspiration rather then execution.
-
-# But What About "Big Data"?
-
-(Mostly) missing in this subject will be talk of Hadoop, MapReduce, ElasticSearch,
-Spark, TensorFlow, DeepLearning, MapReduce, AWS, Zeppelin, Kafka,
-and all the other system-level staples of the standard Big Data
-tool stack. These are all great tools  which you should,
-of course, learn and understand.  There are many fantastic on-line,
-freely-available, resources which can offer detailed tutorials on
-all the above (and if you want to prioritize, start with
-Zeppelin+TensorFlow+Spark).
-
-But here's the thing. I've been doing data mining for far too long to use these tools uncritically.
-Data mining tools as heuristics for taking wild leaps across a huge space of possible models.
-And having supervised dozens of graduate students building and using those tools,
-I assert that many of those leaps can be too far-fetched.
-
-Now many other people and much more trusting than me.
-They 
-view data miners as perfect oracles that will deliver the "right" answer, which we will
-never need to question.
-
-- So, if you prefer (spurious) certainty, just study 
-Hadoop, MapReduce, ElasticSearch,
-Spark, TensorFlow, DeepLearning, MapReduce, AWS, Zeppelin, Kafka, etc.
-- But if, like me, you have doubts, then you want to know how to engineer environments that support the exploration and reduction of doubts. 
-  In which case, this subject is for you.
-
-## Aside
-
-(Of course, the above could be criticized as a trite dichotomy, that
-it  may be  possible to use the Big Data tools to implement the operators
-described above. That would be a good project for this subject.)
-
-
-# Student Goals
-
-The goal of this work is to destroy, or at least
-find limits with my prior work. As inputs for that task
-I offer LURE, a tool kit that offers a baseline0 implementation
-of many of the tools that I think are important. 
-
-For everything I show you, your response should be:
-
-- I've been reading some on that topic...
-- ... and I see that there are several other ways to do that thing ...
-- ... and I'm going to code them up and see if they work better than LURE.
-
-Your job is to 
-
-- research alternate ways to implement any part of that  kit
-- implement on of them
-- compare them to LURE
-- show where LURE falls down
-- make a recommendation about 
-   - when not to use LURE and use something else
-   - how to improve LURE to make it let your better thing.
-   - how to improve the better thing to make it more like LURE
-
-Now, of course, you should expect to do better than LURE. LURE
-is a one-size-fits all tool designed with a "near enough is good
-enough" attitude. Specific tools often do better
-on specific data sets.  So consider yourself a success if
-you prove LURE a failure!
-
-
+Homeworks: 
++ [Aug-Sept](homeworks)
