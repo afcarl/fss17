@@ -3,15 +3,24 @@ title: Welcome
 ---
 
 
+
+
+
+## Updates
+
+(latest listed first)
+
++ Lectures:  [One](lect01); 
++ Homeworks:  [Submit here](http://tiny.cc/fss17give); [Aug-Sept](homeworks)
+
+-------
+
 NCSU CSC 591-023 (10722)  
-CSC 791-023 (11162)  
-Tues/Thurs 4:30 to 5:45  
-Mid-session exam week 10 (on terminology)    
-No final exam.
+CSC 791-023 (11162).  Tues/Thurs 4:30 to 5:45  
+Mid-session exam week 10 (on terminology)  No final exam.
 
 
 <img class="pure-img displayed"  src="https://github.com/txt/fss16/raw/master/img/science.png">
-
 
 
 
@@ -25,12 +34,3 @@ So a million million people can run data miners. But how many  now when those da
 Do this subject, learn answers to those questions, become the data scientist everyone needs to consult with  when things start going wrong.
 
 
-## Updates
-
-(latest listed first)
-
-Lectures: 
-+ [One](lect01); 
-
-Homeworks: 
-+ [Submit here](http://tiny.cc/fss17give); [Aug-Sept](homeworks)
