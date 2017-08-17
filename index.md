@@ -33,4 +33,4 @@ Lectures:
 + [One](lect01); 
 
 Homeworks: 
-+ [Aug-Sept](homeworks)
++ [Submit here](http://tiny.cc/fss17give); [Aug-Sept](homeworks)
