@@ -45,6 +45,8 @@ only thing for you. Look what a lot of things there are to learn."
 
 ## Need to be more ambitious
 
+(a.k.a how to make grown man cry)
+
 Him: "Hey Timm, I've got this great new on-line machine learning platform where researchers can log on and do
 really fast queries over complex SE data."
 
@@ -63,7 +65,6 @@ data mining and then stops maturing their ideas and expectations about data mine
 Him: "I don't think so. I'll just go talk to that person over there now..."
 
 ## Need to be more Cautious
-
 
 Limits to test = limits to build ([My PhD](http://menzies.us/pdf/95thesis.pdf)
 
@@ -90,8 +91,15 @@ people linving in Mexico (as of 2015). WHen this query returns millions of resul
 the results? When you show these results to anyone that needs to take action on this data, what
 aspects of those results will you stress or gloss over?
 
-More generally,  data ming gets **much** more complicated that the above. Hyperparameter optimization,
-discretization, spectral learning, visualizations, etc etc. Most folks don't realize the vast range of options
+More generally,  data mining gets **much** more complicated that the above. 
+
+- See
+the [source code](https://github.com/txt/ase15/blob/master/models/icse14-v5-min.py) used to get the results for [this paper](https://arxiv.org/pdf/1609.05563.pdf).
+- Consider the effectos of  
+Hyperparameter optimization,
+discretization, spectral learning, visualizations, etc etc. 
+
+Most folks don't realize the vast range of options
 within data mining. Why? Cause they use these tools "black box" with no poking around. Which means they are
 inhereting all the biases of the specific case studies used to set up their tools. And are those biases appropriate
 for your problem? You won't know unless you look around.
@@ -137,21 +145,86 @@ twiddle different bits.
 
 For more on this see, see [Idea Engineering](http://menzies.us/pdf/13promise.pdf).
 
-## Need More Science
+## Need more "science" in "data science"
 
-"Science" is the process of communities sharing and reviewing and
-improving each other’s ideas. Sadly, most "data science" is not about
-"science". Rather its about vendors selling you stuff that does not
-work properly and does not ring an alarm when it starts failing.  This
+<img class="pure-img displayed"  src="https://github.com/txt/fss16/raw/master/img/science.png">
+
+
+# Why this subject?
+
+
+An important part of knowledge  is "no"; i.e. the ability to critically assess something, and to recognize when one idea  is better, smarter, than another.
+
+"Science" is the process of communities sharing and reviewing and improving each other's ideas. Sadly, most "data science" is not about "science". Rather its about vendors selling you stuff that does not work properly and does not
+ring an alarm when it starts failing.
+This
 is strange since an important part of knowledge is "no"; i.e. the
 ability to critically assess something, and to recognize when one idea
 is better, smarter, than another.
 
-So a million million people can run data miners. But how many now when
-those data miners start going wrong? And how to fix faulty models?
-Do this subject, learn answers to those questions. Become the data
-scientist everyone needs to consult with when things start going
-wrong.
+So a million million people can run data miners. But how many  now when those data miners start going wrong? And how to fix faulty models?
+
+So here are some operators that I demand a modern data minign toolkit supports. Note: minority view alert!
+
+
+
+
+_Comprehension_:
+
+- Something we can read, argue with
+- Essential for communities critiquing ideas. If the only person reading a model is a carburetor, then we can expect little push back. But if your models are about policies that humans have to implement, then I take it as axiomatic that humans will want to read and critique the models.
+
+_Fast_:
+
+-   Not a CPU hog
+-  Reproducing  and improving an old ideas means that you can reproduce that old result. Also, certifying that new ideas often means multiple runs over many sub-samples of the data. Such  reproducibility and certification is impractical when such reproduction is impractically slow
+
+_Light_:
+
+-  Small memory footprint
+- Again, reproducing an old data mining experiment or certifying a new result means that the resources required for reproduction are not exorbitant.
+
+_Goal-aware_:
+
+-  Different goals means different models. AND multiple goals = no problem!
+- This is important since most data miners build models that optimizer for a single goal (e.g. minimize error or least-square error) yet business users often want their data miners to achieve many goals.
+
+_Humble_ :
+
+-   Can publish succinct certification envelope (so we know when not to trust)
+-  Delivered data mined models should be able to recognize when new data is out-of-scope of anything they've seen before. This means, at runtime, having access to the data used to build that model. Note that phrase _succinct_ here: certification envelopes cannot include all the data relating to a model, otherwise every hard drive in the world will soon fill up.
+
+_Privacy-aware_:
+
+-   Can hide an individual's data
+- This is essential when sharing a certification envelope
+
+_Shareable_:
+
+-   Knows how to transfer models, data, between contexts.
+-  Such transfer usually requires some transformation of the source data to the target data.
+
+_Context-aware_:
+
+-   Knows that local parts of data generate different models.
+-  While general principles are good, so too is how to handle particular contexts. For example, in general, exercise is good for maintaining healthy. However, in the particular context of  patients who have just had cardiac surgery, then that general principle has to be carefully tailored to particular patients.
+  ideas need to be updated.
+
+_Self-tuning_:
+
+-   And can do it quickly
+-  Many experiments show that we can't just use data miners off-the-shelf.  Rather, if their control parameters are tuned, then we can get much better data mining results.
+
+_Anomaly-aware_:
+
+-   Can detect when new inputs differ from old training data
+-  This is the trigger for when old
+
+
+_Incremental_:
+
+-   Can update old models with new data
+-  Anomaly detectors tell us something has to change.  Incremental learners tell us what to change.
 
 
 ## Why Listen to me?
@@ -164,27 +237,6 @@ Been helping a lot of people do data mining for a long time (PROMISE).
 
 Get cited, a lot (citations = Facebook likes; we all complain about them; we all like it when it is us).
 
-
-## Seeking Insights
-
-So if biases cannot be avoid, and those biases get very complex and arcane, what does it mean to "vertify" a data miner?
-The best we can do is to explore two sets of biases
-
-- The biases of the learner;
-- The biases of the people who need the model.
-
-So data mining is the process of icnrementally discovering and reducing the distances between these two biases.
-And that means:
-
-- re-running the learners again and again and again
-- storing and revisiting lots of old data and results
-- _showing the users_ the results of the data mining then asking them "what do you think?"
-
-This is this path to insight (Bird example).
-
-## Fear
-
-Newbies think data mining is running simple queries like `age > 21`.
 
 ## Beyond Magic
 
@@ -219,41 +271,4 @@ I've also watched dozens of supposedly skilled data mining people screw it up (y
 ## Worried about Continuous Deloymemt
 
 
-
-## Engineering Details
-
-Here's  my standard toolkit for exploring data. Note the commitmnet to various
-data structures and algorithms. You can, and you should, critize those choices
-(and run experiments on different choices). 
-
-Regardless of the _how_, I hope you reflect much on the _why_ of the following;
-i.e.
-
-- _no data mining without verification _ and  
-- _before anything else, design for verification_.
-
-### Discretization, feature selection
-
-When explaining things to business users, 
-
-### Instance selection
-
-Find groups of data where conclusions are different
-
-From clustered data, we only need share  exemplars (e.g. N random items per centroid).
-
-- **Bad idea if** inference from exemplars worse than inference from all data. FYI, current evidence = not wrong:
-     - [Vasil's data carving thesis {username=password=guest}](http://unbox.org/things/var/vasil/thesis/thesis-v3.pdf (username=password=guest)
-     - [Vivek's configuration sampling work](https://arxiv.org/pdf/1701.08106.pdf)
-     
-### Mutate (a little) prior to sharing
-
-(Fayola's approach](http://menzies.us/pdf/15lace2.pdf). To hide individuals:
-
-- Find everyone's nearest unlike neighbor
-- Mutate by a random amount up to, but not more than, halfway to that neighbor
-
-### Who are these people:
-
-- Vas
 

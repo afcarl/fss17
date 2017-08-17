@@ -35,7 +35,7 @@ wrong.
 + Report on complex technical  issues (written talk)
 
 
-<img class="pure-img displayed"  src="http://www.csc.ncsu.edu/enews/images/1770.jpg">
+<img class="pure-img displayed"  src="h150 ttp://www.csc.ncsu.edu/enews/images/1770.jpg">
 
 **Lecturer:** Tim Menzies (Prof)
 
