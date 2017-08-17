@@ -1,9 +1,7 @@
 ---
-title: Lecture1 (6 times)
+title: Why This Subect?
 published: true
 ---
-
-# Why This Subject? 
 
 
 
