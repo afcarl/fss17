@@ -119,9 +119,11 @@ For example:
  
 What are the parts of this figure?
 
+- Figures: one figure for different evaluation critieria (false alarms, recall,
+  AUC, precision)
 - Boxes= data sets (velocity, synapse, art, ..)
 - Rows= learners (knn, svm, nb, rf, lr, dt)
-- Columns= data pre-processing treatments (no, s1, s2) 
+- Columns= data treatments (no, s1, s2) 
 - Stats tests= gray scale
 
 Now, take a deep breath and consider all the choices made to generate this data...
@@ -133,110 +135,169 @@ Now, take a deep breath and consider all the choices made to generate this data.
 
 For example: [velocity](https://zenodo.org/record/322455#.WZwmxJOGOfc).
 
-### Data Pre-processors
+### Learners
+
+For all the learners knn, svm, nb, rf, lr, dt
+
+- write 2 lines describe the algorithm
+- write down some of the control parameters of that algorithm
+- For those doing KNN (kth nearest neighbor), please see [here](http://menzies.us/pdf/11teak.pdf), section 2.5
+- For those doing RF (random forests) and dt (decision trees) please:
+    - see [here](dt101)
+    - [and here](https://arxiv.org/pdf/1609.01759.pdf) table2.
+- For naive bayes people, 
+    - look [here](http://robotics.stanford.edu/users/sahami/papers-dir/disc.pdf_
+    - look [here](http://i.giwebb.com/wp-content/papercite-data/pdf/YangWebb02a.pdf), secion 3
+-  SVM people need to read about kernel functions
+- Logistic regression people have it easy! Nothing to tune!
+
+### Data Treatments
 
 - No= do nothing
 - S1= SMOTE= synthetic minority over-sampling
-     - One way to handle class imbalance
-     - Many other ways, see [here](http://ieeexplore.ieee.org/document/5128907/)
-- S2= SMOTUNED. An NCSU special that automatically learns best control parameters for SMOTE. See [here](https://arxiv.org/pdf/1705.03697.pdf).
+    - One way to handle class imbalance
+    - Many other ways, see [here](http://ieeexplore.ieee.org/document/5128907/)
+- S2= SMOTUNED. 
+    - An NCSU special that automatically learns best control parameters for SMOTE. 
+    - See [here](https://arxiv.org/pdf/1705.03697.pdf).
 
 <img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/smote.png">
 
-### Learners
+### Evaluation criteria
 
-- For all the learners knn, svm, nb, rf, lr, dt
-      - write 2 lines describe the algorithm
-      - write down some of the control parameters of that algorithm
-      - For those doing KNN (kth nearest neighbor), please see [here](http://menzies.us/pdf/11teak.pdf), section 2.5
-      - For those doing RF (random forests) and dt (decision trees) please:
-            - see [here](dt101)
-            - [and here](https://arxiv.org/pdf/1609.01759.pdf) table2.
-      - For naive bayes people, 
-            - look [here](http://robotics.stanford.edu/users/sahami/papers-dir/disc.pdf_
-            - look [here](http://i.giwebb.com/wp-content/papercite-data/pdf/YangWebb02a.pdf), secion 3
-      - SVM people need to read about kernel functions
-      - Logistic regression people have it easy! Nothing to tune!
+Formally, defect prediction is a binary classification problem.
+The performance of a defect predictor can be assessed
+via a confusion matrix like Table I where a "positive" output
+is the defective class under study and a "negative" output is
+the non-defective one. Further, “false” means the learner got
+it wrong and "true" means the learner correctly identified a
+fault or non-fault module. Hence, this table has four quadrants
+containing, e.g FP which denotes "false positive"
 
+<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/abcd.png">
 
-- Decision trees are recursive _diversity reduction_ algorithms
-- Find the split that most reduces diversity
-- Recurse on each split.
-- Stop when (e.g.) too few examples in each split.
+From this matrix, we can define performance measures like
 
-RandomForests says "if one tree is good, why not build 100?"
+- Recall is the fraction of relevant instances that are retrieved:
+   - Recall = pd = TP/(TP+FN)
+- Precision is the fraction of retrieved instances that are relevant:
+   - Precision = prec = TP/(TP+FP)
+- False Alarm is the ratio of false positive to total predicted negative:
+   - False alarm = pf = FP/(FP+TN)
 
-- each time, grab (say) log(N) of the attributes and some percent of the rows
-- build N trees
-- make a conclusion by voting across the forest
+As shown below,  a typical predictor must "trade-off"
+between false alarm and recall. This is because the more
+sensitive the detector, the more often it triggers and the higher
+its recall. On the other hand, if a detector triggers more often,
+it can also raise more false alarms. Hence, when increasing
+recall, we should expect the false alarm rate to increase
+(ideally, not by very much).
 
-### Example1
+<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/roccurve.png">
 
-- let us measure diversity using _standard deviaton_ 
-     - sqrt((&sum; square(x - &mu;))/(n-1))
-- standard deviation &sigma; of 9,2,5,4,12,7 has &mu; = 6.5 and &sigma;=3.619.
-- Learners like CART and M5prime and Random Forest Regressorts used standard deviation.
-    - Why? Cause these learners predict for _numeric class variables_.
+Which means we can offer another measure: the Area Under Curve (AUC), which is the area covered by an
+ROC curve  in which;
+   - the X-axis represents FPR = FP/(FP+TN)
+   - and the Y-axis represents: TPR = TP/(TP+FN)
 
-### Example2:
+### Stats tests 
 
-- let us measure diversity using _entropy_; i.e. _-1* &sum; p*log2(p)_
-- e.g. 1 orange, 1 apple, 2 bananas, and 4 grapes 
-      - occur at probability 1/8, 1/8, 1/4, and 1/2
-      - 8 =2*2*2 so log2( 1/8 ) = -3
-      - 4 =2*2 so log2( 1/4 ) = -2
-      - 2 =2 so log2( 1/2 ) = -1
-      - what is entropy of (o,a,b,b,g,g,g,g) 
-      - -1 * (1/8*-3 + 1/8*-3 + 1/4*-2 + 1/2*-1)
-      - = -1 * (1/8*-3 + 1/8*-3 + 2/8*-2 + 4/8*-1)
-      - = -1/8 * (-6 + -4 + -4)  
-      - = 14/8 
-      - = 1.75 
-- Learners like decision trees and random forests use entropy
-     - Why? Cause these learners predict for _symbolic class variables.
+To check the effects of our treatments,
 
-### Example3: 
+- Five times, we randomized the order of the data
+- Each time, we divide the data into five bins
+- So 25 experiments in all, each report recall, precision, false alarn, auc
 
 
-What is the best split for this data?
+Each box of data has triples of results for each learner (one for each treatment).
 
-<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/golf.png">
+- If there are three colors (dark gray, light gray, white) then the numbers are different
+- If there are two colors (dark gray, white) then the numbers fall into two groups
+- If there is one colors (white) then the numbers fall into one group (i.e. no difference).
 
-Here are the options (note that this is four different splits):
+To find those colors,
+we use a statistical significance test and an effect
+size test. 
 
-<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/tree.png">
+- Significance test are usefully for detecting if two
+populations differ merely by random noise. 
+   - i.e. is there any difference at all?
+- Effect sizes
+are useful for checking that two populations differ by more
+than just a trivial amount.
+   - i.e. is the difference interestingly large?
 
-Consider the _outlook_ tree. We have three sub-branches so the _expected value_ of the diversity after the split is
+Here, our significance test was the Scott-Knott procedure:
 
-- 5/14 * entropy of sunny split 
-- 4/14 * entropy of overcast split 
-- 5/14 * entropy of rainy split 
+- Sort the results (so this would be a list of 3 sets of numbers)
+- Recursively bi-clusters to sorted set of numbers.
+- If any two clusters are statistically indistinguishable, ScottKnott
+reports them both as one "rank". 
+- Scott-Knott first looks
+for a break in the sequence that maximizes the expected values
+in the difference in the means before and after the break. 
+- More
+specifically, it splits "L" values into sub-lists "M" and "N" in order
+to maximize the expected value of differences in the observed
+performances before and after divisions. 
+- E.g. for lists L,M and
+N of size LS,MS and NS where L = union(M,N)nx, Scott-Knott divides
+the sequence at the break that maximizes:
 
-The overcast split is easy: 
 
-- we only have _yes_ so _p(yes)_ = 1 and log2(p) = 0
-- and 4/14 is zero
+<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/maxdiff.png">
 
-The sunny and rainy split are symmetric
+Here's that test,  coded up, for those of you who [like code](ihttps://lualure.github.io/info/sk.html) (and that's all of you, right?)
 
-- sunny: 2 yes and 3 no =     -1 * (2/5 * log2(2/5) + 3/5 * log2(3/5)) = 0.97
-- raning: 3 yes and 2 no = same entropy as sunny
+### Q: What do we see?
 
-So the expected value after the outlook split is
+- A: None
+-  No learner was consistently "best" across
+     most of our experiments. 
+-  RF (random
+     forests) has the highest "best" scores, it was still defeated in
+     (18−7)/18 = 61% experiments. 
+- On the other hand, S2 (SMOTUNED)
+     was consistently used by whatever learner was found to be
+     "best" (in recall and AUC). Hence, we conclude from the
+     that "better data" might be better than "better data miners".
 
--  (5/14 * 0.97) + (4/14 * 0) + (5/14 * 0.97) = 0.69
+### Oh But does all this really matter?
 
-(BTW, this is an improvement since before the split we have 9 yes, 5 no; ie. entropy was 0.94; i.e. **more** diversity).
+Darn tooting it does. Check out the improvements seen when using "S2" (auto-tuned SMOTE). In the following, _positive numbers_ mean that _larger_ scores were seen in Auto-tuned SMOTE than with 
+standard SMOTE.
 
-If we repeat this calc over all splits, we get
+<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/autotune.png">
 
-- outlook split: 0.69
-- temperate split: 0.91 
-= humidity split:  0.79
-- windy split: 0.89
+### In the Literature
 
-So we would split on outlook.
+In February 2017, we searched scholar.google.com for the
+conjunction of "software" and "defect prediction" and "oo"
+and "ck" published in the last decade. 
+- This returned 231
+results. 
 
- 
-Phew. 
+From that list, we selected "highly-cited" papers, which
+we defined as having more than 10 citations per year. 
+- This
+reduced our population of papers down to 107. 
 
+After reading
+the titles and abstracts of those papers, and skimming the
+contents of the potentially interesting papers, we found 22
+papers that either performed ranking studies (as
+defined above) or studied the effects of class imbalance on
+defect prediction. 
+
+In the following, the column "evaluated using multiple
+criteria", papers scored more than "1" if they used multiple
+evaluation criteria:
+
+
+<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/litreview.png">
+
+Which can be summarised as follows:
+
+<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/litreview.png">
+
+that is, most of the literature does not explroethe space of options shown above.
