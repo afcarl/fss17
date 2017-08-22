@@ -76,9 +76,9 @@ From ME:
   reduce XYZ then the learner could be building a model no one cares about.
 - Also, how we assess a model critically effects what model we prefer; i.e. what lessons we learn.
 
-<img class="pure-img displayed"  src="https://github.com/txt/fss16/raw/master/img/aucRecall.png">
+<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/aucRecall.png">
 
-<img class="pure-img displayed"  src="https://github.com/txt/fss16/raw/master/img/precPf.png">
+<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/precPf.png">
 
  
 What are the parts of this figure?
@@ -94,7 +94,7 @@ Class exercise:
 
 ## Boxes= data ses
 
-<img class="pure-img displayed"  src="https://github.com/txddPt/fss16/raw/master/img/ckMetrics.png">
+<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/ckMetrics.png">
 
 ## Data Pre-processors
 
@@ -104,7 +104,7 @@ Class exercise:
      - Many other ways, see [here](http://ieeexplore.ieee.org/document/5128907/)
 - S2= SMOTUNED. An NCSU special that automatically learns best control parameters for SMOTE. See [here](https://arxiv.org/pdf/1705.03697.pdf).
 
-<img class="pure-img displayed"  src="https://github.com/txddPt/fss16/raw/master/img/smote.png">
+<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/smote.png">
 
 ## Learners
 
@@ -162,11 +162,11 @@ RandomForests says "if one tree is good, why not build 100?"
 
 What is the best split for this data?
 
-<img class="pure-img displayed"  src="https://github.com/txddPt/fss16/raw/master/img/golf.png">
+<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/golf.png">
 
 Here are the options (note that this is four different splits):
 
-<img class="pure-img displayed"  src="https://github.com/txddPt/fss16/raw/master/img/tree.png">
+<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/tree.png">
 
 Consider the _outlook_ tree. We have three sub-branches so the _expected value_ of the diversity after the split is
 
