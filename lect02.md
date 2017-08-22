@@ -300,5 +300,15 @@ Which can be summarised as follows:
 
 <img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/venn.png">
 
-that is, most of the literature does not explroethe space of options shown above and do
+----
+## Conclusion
+
+Most of the literature does not explroethe space of options shown above and do
 does not find the improvements reported above.
+
+
+The models we get are a function of the choices we make while running the learner.
+
+- Very important to understand that space of options
+- And most data mining newbies do not. Sigh.
+
