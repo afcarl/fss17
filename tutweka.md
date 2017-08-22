@@ -14,6 +14,7 @@ Got co c9.io. Click on the github icon top right
 <img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/c9.png">
 
 Create new workspace, enter in the following github repo name:  _https://github.com/dotninjas/dotninjas.github.io_.
+
 Then press the big green button (don't worry about the templates, they will work themselves out).
 
 <img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/ninja.png">
