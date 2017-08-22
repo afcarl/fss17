@@ -3,6 +3,7 @@ title: Time to LEARN something
 published: true
 ---
 
+
 U yearn to learn? Me to!
 
 Log into public github
@@ -25,7 +26,7 @@ When you are in,
 
 Now you should see something like this:
 
-<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/ninja.png">
+<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/ninjash.png">
 
 Type `eg0` to show (a) some data and (b)  a decision tree learned from that data.
     
