@@ -1,5 +1,5 @@
 ---
-title: War Story 0a- When Models Kill
+title: When Models Kill
 published: true
 ---
 

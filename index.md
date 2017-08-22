@@ -11,6 +11,7 @@ title: Welcome
 (latest listed first)
 
 + Lectures:  [No free lunch](lect02); [Decision trees](dt101); [One](lect01); 
++ War stories: [When models kill](warstory0);
 + Tutorials: [Weka101](tutweka);
 + Homeworks:  [Submit here](http://tiny.cc/fss17give); [Aug-Sept](homeworks)
 
