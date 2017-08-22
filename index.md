@@ -11,6 +11,7 @@ title: Welcome
 (latest listed first)
 
 + Lectures:  [One](lect01); 
++ Tutorials: [Weka001](wekatut);
 + Homeworks:  [Submit here](http://tiny.cc/fss17give); [Aug-Sept](homeworks)
 
 -------

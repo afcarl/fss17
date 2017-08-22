@@ -6,16 +6,15 @@ published: true
 
 U yearn to learn? Me to!
 
-Log into public github
+Log into public github (no account? create one!).
 
 Got co c9.io. Click on the github icon top right
 
 
 <img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/c9.png">
 
-Create new workspace, enter in the following github repo name: 
-
-- _https://github.com/dotninjas/dotninjas.github.io_
+Create new workspace, enter in the following github repo name:  _https://github.com/dotninjas/dotninjas.github.io_.
+Then press the big green button (don't worry about the templates, they will work themselves out).
 
 <img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/ninja.png">
 
@@ -28,7 +27,7 @@ Now you should see something like this:
 
 <img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/ninjash.png">
 
-Type `eg0` to show (a) some data and (b)  a decision tree learned from that data.
+Type "`eg0`" to show (a) some data and (b)  a decision tree learned from that data.
     
     @attribute outlook {sunny, overcast, rainy}
     @attribute temperature real

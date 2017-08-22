@@ -3,88 +3,34 @@ title:  No microscope without mud
 published: true
 ---
 
+
+## Preamble
+
+Before reading this, do this [quick tutorial exercise](https://txt.github.io/fss17/tutweka).
+
+Note the end of that tut: the models we get are a function of the choices we make while running the learner.
+
+Say what? Don't data miners find truth in data? 
+
+Well.... not so much. 
+
+If you are not faint of heart, read on. But be warned. You may be shocked at how... subjective.. are the results
+of data mining. Kinda brings to mind the old adage:
+
+- Laws, like sausages, cease to inspire respect in proportion as we know how they are made.     
+  -- John Godfrey Saxe (1816 - 1887)
+
+--------
+
+## What do data miners do?
+
 Data mining algorithms generate summaries of data. They are like microscopes we look through to reveal internal structure.
 
 If a microscope has mud on the lens, what we see might be distorted. The point of this lecture is that, in data mining, all data miners have mud on them.
 All the models we find are wrong, or irrelevant, or useless to some extent for some users.
 
-But first, we'd better run some learners:
-
-- Log into public github
-- Got co c9.io. Click on the github icon top right
-
-
-<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/c9.png">
-
-Create new workspace, enter in the following github repo name: 
-
-- _https://github.com/dotninjas/dotninjas.github.io_
-
-<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/ninja.png">
-
-When you are in,
-
-     cd ninja
-     sh ninja
-
-Now you should see something like this:
-
-<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/ninja.png">
-
-Type `eg0` to show (a) some data and (b)  a decision tree learned from that data.
-    
-    @attribute outlook {sunny, overcast, rainy}
-    @attribute temperature real
-    @attribute humidity real
-    @attribute windy {TRUE, FALSE}
-    @attribute play {yes, no}
-    
-    overcast  64  65  TRUE   yes
-    overcast  72  90  TRUE   yes
-    overcast  81  75  FALSE  yes
-    overcast  83  86  FALSE  yes
-    rainy     65  70  TRUE   no
-    rainy     68  80  FALSE  yes
-    rainy     70  96  FALSE  yes
-    rainy     71  91  TRUE   no
-    rainy     75  80  FALSE  yes
-    sunny     69  70  FALSE  yes
-    sunny     72  95  FALSE  no
-    sunny     75  70  TRUE   yes
-    sunny     80  90  TRUE   no
-    sunny     85  85  FALSE  no
-    
-    outlook = sunny
-    |   humidity <= 75: yes (2.0)
-    |   humidity > 75: no (3.0)
-    outlook = overcast: yes (4.0)
-    outlook = rainy
-    |   windy = TRUE: no (2.0)
-    |   windy = FALSE: yes (3.0)
-
-If you want to know more, then
-
-- This is the command line WEKA tool run by (e.g.)
-
-        Weka="java -Xmx2048M -cp weka.jar "
-        learner=weka.classifiers.trees.J48
-        $Weka $learner -p 0 -C 0.25 -M 2 -t train.arff1 -T test.arff
-
-This grows a decision tree downwards until there are more than `-M 2` examples in the leaves.
-
-Then in prunes sub-trees. Sub-trees die if, after pruning, the overall test error does not get worse by more
-than `-C 0.25`.
-
-Why those magic numbers? Engineering judgement. I.e. the generated model is a result of decisions made by the analyst.
-We'll get back to that.
-
-For more examples, see
-
-- [here](https://github.com/dotninjas/dotninjas.github.io/blob/master/ninja/ninja.rc#L1105,L1183)
-- [and here](https://github.com/dotninjas/dotninjas.github.io/blob/master/ninja/ninja.rc.md)
-
-
-worst case in quick sort:
+Data miners are algorithms and algorithms have known best and worst cases.
+Consider the quicksort algorithm:
 
 ```
 function quicksort(array)
@@ -113,9 +59,11 @@ General lesson:
 - .. you know how to pick inputs that make it smile...
 - ... or make it frown
 
-NFL= no free lunch
-  -<em>We have dubbed the associated results NFL theorems because they demonstrate that if an algorithm performs well on a certain class of problems then it necessarily pays for that with degraded performance on the set of all remaining problems.</em>
-  -  Wolpert, D.H., Macready, W.G. (1997), "No Free Lunch Theorems for Optimization", IEEE Transactions on Evolutionary Computation 1, 67.
+More generally, there are various no free lunch (NFL) theorems saying that if an algorithm works well on _X_ then there
+exist just as many cases _Y_ whre it will perform badly:
+
+- <em>We have dubbed the associated results NFL theorems because they demonstrate that if an algorithm performs well on a certain class of problems then it necessarily pays for that with degraded performance on the set of all remaining problems.</em>    
+   --  Wolpert, D.H., Macready, W.G. (1997), "No Free Lunch Theorems for Optimization", IEEE Transactions on Evolutionary Computation 1, 67.
 
 
 From [Machine Learning Lesson of the Day, Jan 24, 2014](https://goo.gl/UWh2gK):
