@@ -1,5 +1,7 @@
-
-#  No microscope without mud
+---
+title:  No microscope without mud
+published: true
+---
 
 Data mining algorithms generate summaries of data. They are like microscopes we look through to reveal internal structure.
 
