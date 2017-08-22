@@ -104,6 +104,14 @@ From ME:
 res about.
 - Also, how we assess a model critically effects what model we prefer; i.e. what lessons we learn.
 
+----
+
+## Case study
+
+The conclusions we draw are a function of the decisions we make during data mining.
+
+For example:
+
 <img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/aucRecall.png">
 
 <img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/precPf.png">
@@ -118,13 +126,12 @@ What are the parts of this figure?
 
 Now, take a deep breath and consider all the choices made to generate this data...
 
-Class exercise:
 
-## Boxes= data ses
+### Boxes= data ses
 
 <img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/ckMetrics.png">
 
-## Data Pre-processors
+### Data Pre-processors
 
 - No= do nothing
 - S1= SMOTE= synthetic minority over-sampling
@@ -134,7 +141,7 @@ Class exercise:
 
 <img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/smote.png">
 
-## Learners
+### Learners
 
 - For all the learners knn, svm, nb, rf, lr, dt
       - write 2 lines describe the algorithm
