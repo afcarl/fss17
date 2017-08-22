@@ -80,4 +80,4 @@ For more examples, see
 - [here](https://github.com/dotninjas/dotninjas.github.io/blob/master/ninja/ninja.rc#L1105,L1183)
 - [and here](https://github.com/dotninjas/dotninjas.github.io/blob/master/ninja/ninja.rc.md)
 
-
+For the theory behind decision tree learning, see [here](dt101)

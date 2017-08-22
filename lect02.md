@@ -127,9 +127,11 @@ What are the parts of this figure?
 Now, take a deep breath and consider all the choices made to generate this data...
 
 
-### Boxes= data ses
+### Boxes= data sets
 
 <img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/ckMetrics.png">
+
+For example: [velocity](https://zenodo.org/record/322455#.WZwmxJOGOfc).
 
 ### Data Pre-processors
 
@@ -147,14 +149,15 @@ Now, take a deep breath and consider all the choices made to generate this data.
       - write 2 lines describe the algorithm
       - write down some of the control parameters of that algorithm
       - For those doing KNN (kth nearest neighbor), please see [here](http://menzies.us/pdf/11teak.pdf), section 2.5
-      - For those doing RF (random forests) and dt (decision trees) please see [here](https://arxiv.org/pdf/1609.01759.pdf) table2.
+      - For those doing RF (random forests) and dt (decision trees) please:
+            - see [here](dt101)
+            - [and here](https://arxiv.org/pdf/1609.01759.pdf) table2.
       - For naive bayes people, 
             - look [here](http://robotics.stanford.edu/users/sahami/papers-dir/disc.pdf_
             - look [here](http://i.giwebb.com/wp-content/papercite-data/pdf/YangWebb02a.pdf), secion 3
       - SVM people need to read about kernel functions
       - Logistic regression people have it easy! Nothing to tune!
 
-Before lookin at those, your going to need to know:
 
 - Decision trees are recursive _diversity reduction_ algorithms
 - Find the split that most reduces diversity
@@ -235,38 +238,5 @@ If we repeat this calc over all splits, we get
 So we would split on outlook.
 
  
+Phew. 
 
-
-## Boxes= data sets (velocity, synapse, art, ..)
-Boxes =
-
-George Box
-
-Wolpert.
-
-Inductive bias
-
-Sampling bias
-
-Programming errors
-
-Design choices: so many design choices. Let slook at some of those.
-
-Tables. structure. what goals.
-
-How to sumamrize the goals (bdom, cdom)
-
-How to sumamrise the indepnent vairabels: non-parametric, parametric, random numbers.
-
-
-     186
-
-
-The SE literature is so large that most papers are cited very rarely and researchers and practitioners    routinely miss important related work.   Accordingly, much recent research has explored automatic active learning tools to help researchers find work that is relevant to their own. Those tools however, have two significant problems: (a) they offer no guidance on when a reader can stop reading; and (b) they 
-they suffer from frequent ``runaway reading times'' where a large percentage of studies take far too long to find  relevant papers.
-
-This paper addresses these problems, as follows. Firstly, at the start of the reading process, we explore methods to quicker find an initial set of relevant documents.  We find that a new initialization method based on the inverse document frequency can dramatically reduce the variance in   reading times. This new method has the additional benefit that it also reduces the total number of papers required for each reading study (by an average   of 10\% to 30\%).
-
-Secondly, as reading progresses, we use a new mathematical estimation model to estimate the remaining  number of relevant studies. Users can use this estimate to better understand when can they safely stop reading.
-When compared with the prior state of the art (an incremental SVM method), our new method
-is far more accurate.
