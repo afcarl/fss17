@@ -71,20 +71,24 @@ From [Machine Learning Lesson of the Day, Jan 24, 2014](https://goo.gl/UWh2gK):
 - A model is a simplified representation of reality, and the
 simplifications are made to discard unnecessary detail and allow
 us to focus on the aspect of reality that we want to understand.
-These simplifications are grounded on assumptions; these assumptions
+    -  These simplifications are grounded on assumptions; these assumptions
 may hold in some situations, but may not hold in other situations.
-This implies that a model that explains a certain situation well
-may fail in another situation.  In both statistics and machine
+    - This implies that a model that explains a certain situation well
+may fail in another situation.  
+    - In both statistics and machine
 learning, we need to check our assumptions before relying on a
 model.  
 - The "No Free Lunch" theorem states that there is no one
-model that works best for every problem.  The assumptions of a great
+model that works best for every problem.  
+    - The assumptions of a great
 model for one problem may not hold for another problem, so it is
 common in machine learning to try multiple models and find one that
-works best for a particular problem.  This is especially true in
+works best for a particular problem.  
+    - This is especially true in
 supervised learning; validation or cross-validation is commonly
 used to assess the predictive accuracies of multiple models of
-varying complexity to find the best model.  A model that works well
+varying complexity to find the best model.  
+    - A model that works well
 could also be trained by multiple algorithms – for example, linear
 regression could be trained by the normal equations or by gradient
 descent.  
