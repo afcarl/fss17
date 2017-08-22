@@ -247,7 +247,7 @@ the sequence at the break that maximizes:
 
 <img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/maxdiff.png">
 
-Here's that test,  coded up, for those of you who [like code](ihttps://lualure.github.io/info/sk.html) (and that's all of you, right?)
+Here's that test,  coded up, for those of you who [like code](https://lualure.github.io/info/sk.html) (and that's all of you, right?)
 
 ### Q: What do we see?
 
@@ -298,6 +298,7 @@ evaluation criteria:
 
 Which can be summarised as follows:
 
-<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/litreview.png">
+<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/venn.png">
 
-that is, most of the literature does not explroethe space of options shown above.
+that is, most of the literature does not explroethe space of options shown above and do
+does not find the improvements reported above.
