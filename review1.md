@@ -75,12 +75,10 @@ Decision Tree learning:
 
 ```
 outlook = sunny
-|   humidity = high: no (3.0)
-|   humidity = normal: yes (2.0)
-outlook = overcast: yes (4.0)
+|   humidity = high: no 
+|   humidity = normal: yes 
+outlook = overcast: yes 
 outlook = rainy
-|   windy = TRUE: no (2.0)
-|   windy = FALSE: yes (3.0)
-Number of Leaves  :   5
-Size of the tree :  8
+|   windy = TRUE: no 
+|   windy = FALSE: yes 
 ```
