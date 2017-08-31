@@ -75,3 +75,26 @@ it would take 15 years of CPU time to learn the tuning parameters
 of software clone detectors proposed in [69]. Much of that CPU
 time can be saved if there is a faster way
 
+## KNN (kth nearest neighbor)
+
+Train: add new examples to a box of old examples.
+
+Test: find k near examples, guess details of the new thing from the k old things
+
+Readable? No way. There is no model, just a big box of thousands and thousands of exmaples.
+
+Planable? Nope. But you can cluster then learn details between clusters to infer plans. I [tried that once](http://menzies.us/pdf/12change.pdf) but it does not work as well as 
+[planning via deltas between decision tree branches](https://arxiv.org/pdf/1708.05442.pdf).
+
+Simple to code? Sure. Unless you want to optimize it. Then, things get tricky.
+
+Incrementally update-able? Sure! Just add more examples to the box?
+
+Fast? Nope. Every new test case has to peek at every old training case. But there are some standard optimizations:
+
+- Mega-scale: Use [KD-trees](http://code.activestate.com/recipes/577497-kd-tree-for-nearest-neighbor-search-in-a-k-dimensi/) or some other tree clustering methods to quickly group the examples, 
+- Web-scale: Use Mini-batch k-means to reduce the training data to just a few centroids. Then just reason over the centroids (note: this is a very low memory approach)
+     - Aside: [Mini-batch k-means](https://www.eecs.tufts.edu/~dsculley/papers/fastkmeans.pdf) is incremental
+- Peta-scale: many techniques. e.g. [canopy clustering](https://en.wikipedia.org/wiki/Canopy_clustering_algorithm) and many more besides
+
+## knn, svm, nb, rf, lr, dt
