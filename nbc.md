@@ -3,8 +3,17 @@ title: NBC,  a not-so-naive Bayes Classifier
 published: true
 ---
 
-##Synopsis
+## Historical Note
 
+Update: this code was wrtitten in 2004 and since then much has changed. Support Vector Machines, Tensor Flow, Hadoop, Spark, massive
+text mining, etc etc.
+But some conclusions stay. Even though the following conclusions seem olde worlde, Naive Bayes continues to have a niche. See
+
+- Rennie, Jason D., et al. [Tackling the poor assumptions of naive bayes text classifiers](http://www.aaai.org/Papers/ICML/2003/ICML03-081.pdf) 
+  Proceedings of the 20th International Conference on Machine Learning (ICML-03). 2003.
+- And all its [citations](https://goo.gl/Um1SAs)
+
+## Synopsis
 
      ./nbc -[hlx] train test
 
@@ -30,7 +39,7 @@ In practice, this "naive" strategy works remarkably well- often performs
 as well as other schemes that try to model interactions between
 frequencies.
 
-Hence, we call this system a not-so-naive Bayes Classifier. []{#4}
+Hence, we call this system a not-so-naive Bayes Classifier.
 
 ### Summary of Results
 
@@ -45,7 +54,7 @@ classifier is quite remarkable.
     comparatively *fast or faster* than a much more mature JAVA-based
     tool.
 
-[]{#5}
+
 ### Details: Accuracy
 
 The following table compares classification accuracies between nbc.awk
@@ -151,7 +160,7 @@ Options
  -l
 :   print legal notice
 
-[]{#10}
+
 Installation
 ------------
 
