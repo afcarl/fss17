@@ -126,7 +126,7 @@ BTW, turns out that NB is not so "naive". See
 The following table comes from the last reference. Note that NB performs as well as other methods that explore rich connections between attributes (e.g. the C4.5 decision tree
 learner):
 
-<img class="pure-img displayed"  src="h150 ttp://www.csc.ncsu.edu/enews/images/nb.jpg">
+<img class="pure-img displayed"  src="http://www.csc.ncsu.edu/enews/images/nb.jpg">
 
 - Mozina, M.; Demsar, J.; Kattan, M.; Zupan, B. (2004). Nomograms for Visualization of Naive Bayesian Classifier (PDF). Proc. PKDD-2004. pp. 337–348.
 
