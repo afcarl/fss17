@@ -1,10 +1,14 @@
 ---
-title: 5 Classifiers
+title: 6 Learners (and which is "best")
 published: true
 ---
 
-The following remarks are very subjective. In fact each of the following "sentences" is really just by current
+## Caveat emptor
+
+The following remarks are very subjective. In fact each of the following "sentences" is really just one of my current
 heuristics, each of which really needs experimental verification.
+
+## Eval Criteria
 
 Is a learner
 
@@ -81,6 +85,8 @@ Train: add new examples to a box of old examples.
 
 Test: find k near examples, guess details of the new thing from the k old things
 
+[Demo](http://scott.fortmann-roe.com/docs/BiasVariance.html)
+
 Readable? No way. There is no model, just a big box of thousands and thousands of exmaples.
 
 Planable? Nope. But you can cluster then learn details between clusters to infer plans. I [tried that once](http://menzies.us/pdf/12change.pdf) but it does not work as well as 
@@ -96,5 +102,32 @@ Fast? Nope. Every new test case has to peek at every old training case. But ther
 - Web-scale: Use Mini-batch k-means to reduce the training data to just a few centroids. Then just reason over the centroids (note: this is a very low memory approach)
      - Aside: [Mini-batch k-means](https://www.eecs.tufts.edu/~dsculley/papers/fastkmeans.pdf) is incremental
 - Peta-scale: many techniques. e.g. [canopy clustering](https://en.wikipedia.org/wiki/Canopy_clustering_algorithm) and many more besides
+
+## NB (Naive Bayes)
+
+A Naive Bayes classifier collects frequency counts of old events,
+grouped into "classes". Then, if a new event arrives without a
+classification, it checks through the old list of classes looking for
+the one with the highest frequency counts for this new event.
+This assumption allows us to collect
+frequency counts just on each attribute value (and not pairs, or
+triples, or quads of values) so such classifiers hav a very small memory footprint.
+
+Because of its assumption, this  method is called "naive". 
+BTW, turns out that NB is not so "naive". See 
+
+- Webb, G. I.; Boughton, J.; Wang, Z. (2005). [Not So Naive Bayes: Aggregating One-Dependence Estimators](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.3.7847). Machine Learning. Springer. 58 (1): 5–24. doi:10.1007/s10994-005-4258-6.
+- Rennie, Jason D., et al. [Tackling the poor assumptions of naive bayes text classifiers](http://www.aaai.org/Papers/ICML/2003/ICML03-081.pdf) 
+  Proceedings of the 20th International Conference on Machine Learning (ICML-03). 2003.
+    - And all its [citations](https://goo.gl/Um1SAs)
+- Domingos, Pedro; Pazzani, Michael (1997). 
+  [On the optimality of the simple Bayesian classifier under zero-one loss](http://engr.case.edu/ray_soumya/mlrg/optimality_of_nb.pdf). Machine Learning. 29: 103–137. 
+
+The following table comes from the last reference. Note that NB performs as well as other methods that explore rich connections between attributes (e.g. the C4.5 decision tree
+learner):
+
+<img class="pure-img displayed"  src="h150 ttp://www.csc.ncsu.edu/enews/images/nb.jpg">
+
+- Mozina, M.; Demsar, J.; Kattan, M.; Zupan, B. (2004). Nomograms for Visualization of Naive Bayesian Classifier (PDF). Proc. PKDD-2004. pp. 337–348.
 
 ## knn, svm, nb, rf, lr, dt
