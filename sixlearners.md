@@ -134,14 +134,18 @@ Readable? No way! Just a big list of distributions (see below)
 - There is the nomogram trick:  Mozina, M.; Demsar, J.; Kattan, M.; Zupan, B. [Nomograms for Visualization of Naive Bayesian Classifier](https://goo.gl/uTT33G). Proc. PKDD-2004. pp. 337–348.
 - Whuch looks great... till you starting going pairs or triples of effects. Anyone care to fix that?
 
-Plannable? Nope.
+Plannable? Nope. But see Bayes nets update algrithms for tools that, given a goal, [will find changes to the distributions that acheive that goals](http://www.cs.waikato.ac.nz/~remco/weka.bn.pdf):
+
+- Fine in theory. But still need guidance regarding minimality and what to twiddle etc etc
 
 Simple to code? [Sure!](nbc) Maybe you want to avoid using Guassians with an initial discretizer but these can be 
 [very simple to implement](http://robotics.stanford.edu/users/sahami/papers-dir/disc.pdf).
-   - There are problems with low frequency classes, but that can be patched [see the Lagrange `b` and `m`  tricks](https://github.com/timm/lawker/blob/master/block/timm/evil/write/lib/app/nb/nb.awk), lines 120 and 125;
-   - And there are even NB fixes for ultra-low frequency e.g. [text mining applications](http://www.aaai.org/Papers/ICML/2003/ICML03-081.pdf) 
+
+- There are problems with low frequency classes, but that can be patched [see the Lagrange `b` and `m`  tricks](https://github.com/timm/lawker/blob/master/block/timm/evil/write/lib/app/nb/nb.awk), lines 120 and 125;
+- And there are even NB fixes for ultra-low frequency e.g. [text mining applications](http://www.aaai.org/Papers/ICML/2003/ICML03-081.pdf) 
 
 Incrementally update-able? Absolutely! 
+
 ```
                  Class
 Attribute          yes      no
