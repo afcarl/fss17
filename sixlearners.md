@@ -126,13 +126,49 @@ BTW, turns out that NB is not so "naive". See
 The following table comes from the last reference. Note that NB performs as well as other methods that explore rich connections between attributes (e.g. the C4.5 decision tree
 learner):
 
-<img class="pure-img displayed"  src="http://www.csc.ncsu.edu/enews/images/nb.jpg">
+<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/nb.png">
 
-- Mozina, M.; Demsar, J.; Kattan, M.; Zupan, B. (2004). Nomograms for Visualization of Naive Bayesian Classifier (PDF). Proc. PKDD-2004. pp. 337–348.
+
+Readable? No way! Just a big list of distributions (see below)
+
+- There is the nomogram trick:  Mozina, M.; Demsar, J.; Kattan, M.; Zupan, B. [Nomograms for Visualization of Naive Bayesian Classifier](https://goo.gl/uTT33G). Proc. PKDD-2004. pp. 337–348.
+- Whuch looks great... till you starting going pairs or triples of effects. Anyone care to fix that?
+
+Plannable? Nope.
 
 Simple to code? [Sure!](nbc) Maybe you want to avoid using Guassians with an initial discretizer but these can be 
 [very simple to implement](http://robotics.stanford.edu/users/sahami/papers-dir/disc.pdf).
    - There are problems with low frequency classes, but that can be patched [see the Lagrange `b` and `m`  tricks](https://github.com/timm/lawker/blob/master/block/timm/evil/write/lib/app/nb/nb.awk), lines 120 and 125;
    - And there are even NB fixes for ultra-low frequency e.g. [text mining applications](http://www.aaai.org/Papers/ICML/2003/ICML03-081.pdf) 
+
+Incrementally update-able? Absolutely! 
+```
+                 Class
+Attribute          yes      no
+                (0.63)  (0.38)
+===============================
+outlook
+  sunny             3.0     4.0
+  overcast          5.0     1.0
+  rainy             4.0     3.0
+  [total]          12.0     8.0
+
+temperature
+  mean          72.9697 74.8364
+  std. dev.      5.2304   7.384
+  weight sum          9       5
+  precision      1.9091  1.9091
+
+humidity
+  mean          78.8395 86.1111
+  std. dev.      9.8023  9.2424
+  weight sum          9       5
+  precision      3.4444  3.4444
+
+windy
+  TRUE              4.0     4.0
+  FALSE             7.0     3.0
+  [total]          11.0     7.0
+```
 
 ## knn, svm, nb, rf, lr, dt
