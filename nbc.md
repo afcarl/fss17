@@ -205,13 +205,16 @@ Here is the nbc.awk code called by the Bash script (shown below).
      Pass==1 {train()}
      Pass==2 {print $NF "," classify()}
 
-     ## note this code be fully incremental, as follows
-     ## 1) wait for at least 20 instances before classifying
-     ## 2) meanwhile, train on all incoming data
-     ## 3) always update training data AFTER classification
+Note this code be fully incremental, as follows
+
+- wait for at least 20 instances before classifying
+- meanwhile, train on all incoming data
+- and always update training data AFTER classification
      
      # NR > 20  {print $NF "," classify()}
      #          {train()}
+
+Enoguh fun. Back to the real work.
 
      function train(    i,c) { 
        Total++;
