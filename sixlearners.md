@@ -130,4 +130,9 @@ learner):
 
 - Mozina, M.; Demsar, J.; Kattan, M.; Zupan, B. (2004). Nomograms for Visualization of Naive Bayesian Classifier (PDF). Proc. PKDD-2004. pp. 337–348.
 
+Simple to code? [Sure!](nbc) Maybe you want to avoid using Guassians with an initial discretizer but these can be 
+[very simple to implement](http://robotics.stanford.edu/users/sahami/papers-dir/disc.pdf).
+   - There are problems with low frequency classes, but that can be patched [see the Lagrange `b` and `m`  tricks](https://github.com/timm/lawker/blob/master/block/timm/evil/write/lib/app/nb/nb.awk), lines 120 and 125;
+   - And there are even NB fixes for ultra-low frequency e.g. [text mining applications](http://www.aaai.org/Papers/ICML/2003/ICML03-081.pdf) 
+
 ## knn, svm, nb, rf, lr, dt
