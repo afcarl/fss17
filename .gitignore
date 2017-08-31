@@ -13,3 +13,5 @@ _goldrc
 # vim stuff
 awkprof.out
 awkvars.out
+# mac stuff
+.DS_Store
