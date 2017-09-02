@@ -15,3 +15,12 @@
 - What do we use to measure the diversity for symbolic variable?
 - What do we use to measure the diversity for numeric variable?
 - What is the comman normalization strategy we use? Please provide an example.
+
+
+# Week 2 (08/28 - 09/01):
+- Explain what is domainant we have discussed in class.
+- Are all the learners explainable for their output/predictions? Give 2 example learners that are explainable, and 2 that aren't.
+- What are the common Eval Criterias for learners? Why these criterias are important in the real world software engineering.
+- Could you explain KNN within 2 sentences?
+- How K affects the output from KNN? 
+- How do you choose K for KNN?
