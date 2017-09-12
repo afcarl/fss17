@@ -16,6 +16,8 @@
 - Explore different kernels of Support Vector Machine.
 - Explian how we should choose the kernel.
 
+Bonus: get the KNN and SVM visualization after PCA.
+
 ## Submission
 - Create a folder in your repo named as `workshop`. 
 - Complete the TODOs and get the **code** and **figures** uploaded in the `workshop` folder with your unity id as file names(i.e. unityID.py, unityID.png, unityID.md). 
