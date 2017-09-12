@@ -102,6 +102,9 @@ for weights in ['uniform', 'distance']:
 
 plt.show()
 
+### TODO: explore the effects for different Ks.
+
+
 
 
 """ Part 3 """
@@ -112,4 +115,4 @@ svc.predict(iris_X_test)
 print iris_y_test
 
 
-### Your Job: get the SVC visualization for different kernels.
+### TODO: get the SVC visualization for different kernels.
