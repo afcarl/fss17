@@ -29,9 +29,8 @@
 - Are all the learners explainable for their output/predictions? Give 2 example learners that are explainable, and 2 that aren't.
 - What are the common Evaluation Criteria for the learners? Why these criteria are important in the real world software engineering?
 
-## Notes
-
-### Pareto Domination
+------
+## Notes: Pareto Domination
 
 The human condition is a constant balancing act between vaguely understood, often competing, goals. For example:
 
@@ -42,7 +41,7 @@ The human condition is a constant balancing act between vaguely understood, ofte
 In such trade-off diagrams, point on the Pareto frontier
 
 
-<img class="pure-img displayed" src="https://github.com/txt/ase16/blob/master/img/pareto1.png">
+<img class="pure-img displayed" src="https://raw.githubusercontent.com/txt/ase16/master/img/pareto1.png">
 
 Boolean domination says that I dominates J iff
 
@@ -69,14 +68,17 @@ local function dominate1(i,j,t)
 ```
 
 
+------
 
-###  K-means: 
+###  Notes: K-means 
 
 Pick K centroids at random; label all data with their nearest centroid; for all things with same centroid, compute means; move centroids to that mean position; repeat
 
 <img class="pure-img displayed"  src="https://ds055uzetaobb.cloudfront.net/image_optimizer/ff1732816ba08239c0d3b200c3a9708070885705.jpg">
 
-### Mini-batch k-means
+-----
+
+### Notes: Mini-batch k-means
 
 1. Data arrives in random order. Take the first "K" items, call them centroids (say, K-32);
 2. Read next M items (say M=512)
@@ -86,9 +88,13 @@ Pick K centroids at random; label all data with their nearest centroid; for all 
      - E.g. If centroid "weighs 250" then move it 1/250 th towards the item
 5. Goto 2.     
 
+------
+
 ### Decision Trees
 
 See homework
+
+----
 
 ### Fast Frugal Decision Trees
 
@@ -109,6 +115,8 @@ Extremely extremely simple decision trees.
 More than 2 classes? No problem. For each class, repeat for C and not C.
 
 So fast we can run it N times with different internal thresholds to get a ROC curve.
+
+----
 
 ## PRISM:
 
@@ -145,5 +153,14 @@ t = total instances
 p = positive instances
 ```
 
+If applied to the weather data
+
+<img class="pure-img displayed"  src="https://lh3.googleusercontent.com/ukEXoJRNKiJ1r4jHM5PEC4smvZKSY6fm9FeDy9B6OeYTzQQMUOrD6ZnsYcL9vLmIZT3xnDrFENO8-79N7fdT0ButCJwSbYhp41K3BnNwpOwumfKLN0z-LfwbBZn0Qc6ce4p6dH20eHqi8NJopA">
+
+Comapre with decision tree:
+
+<img class="pure-img displayed"  src="https://lh5.googleusercontent.com/M3EFzbiJrO81Yvpibpe8fUijSbw2w_GXbrQJ01MGzReUK_DNp4KvahP5YM2l4FCf-WCU_ii7izdWLBtkONdTZq1VEJ8Mw73Lfmm2x9RocktsDZT5eYb51Yb8ef2BUv0OJqXMncuXJvvpj0Hh_Q">
+
 **IMPORTANT NOTE**: known to perform less-than-great _unless_ you restrict _Aj=Rj_ to "power ranges"; e.g. those with the above-median score from supervised discretization. 
 
+For a startof the art incremental rule learning (in the PRISM mode), see 
