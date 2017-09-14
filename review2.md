@@ -163,4 +163,5 @@ Comapre with decision tree:
 
 **IMPORTANT NOTE**: known to perform less-than-great _unless_ you restrict _Aj=Rj_ to "power ranges"; e.g. those with the above-median score from supervised discretization. 
 
-For a startof the art incremental rule learning (in the PRISM mode), see [Very fast decision rules for classification in data streams](https://link.springer.com/article/10.1007/s10618-013-0340-z), Petr Kosinai, João Gama, Data Mining and Knowledge Discovery January 2015, Volume 29, Issue 1, pp 168–202
+For a startof the art incremental rule learning (in the PRISM mode), see 
+  [Very fast decision rules for classification in data streams](https://goo.gl/EXGLHP), Petr Kosinai, João Gama, Data Mining and Knowledge Discovery January 2015, Volume 29, Issue 1, pp 168–202
