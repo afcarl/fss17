@@ -1,4 +1,3 @@
-
 ---
 title: Evaluation
 published: true
@@ -411,7 +410,7 @@ The world is not normal:
 This last one is a thing of beauty. Its 50 different SQL queries and the distribution of times
 CPU is waiting on hard drive i/o:
 
-<img src="img/notnorm8.png">
+<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/notnorm8.png">
 
 So, when the world is a funny shape, what to do?
 
