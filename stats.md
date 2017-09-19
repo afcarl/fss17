@@ -572,6 +572,5 @@ For examples on using this code, run `cat statX.txt | python stats.py`.
 The results of a Scott-Knott+Bootstrap+A12 is a very simple
 presentation of a very complex set of results:
 
-<a href="img/results1.png"><img width=600 src="img/results1.png"></a><br>
-
-<a href="img/result2.png"><img width=600 src="img/result2.png"></a>
+<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/results1.png">
+<img class="pure-img displayed"  src="https://github.com/txt/fss17/raw/master/img/results2.png">
