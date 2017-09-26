@@ -10,7 +10,7 @@ title: Welcome
 
 (latest listed first)
 
-+ Lectures:  [6 learners](sixlearners); [No free lunch](lect02); [Decision trees](dt101); [One](lect01); 
++ Lectures:  [Stats](stats); [6 learners](sixlearners); [No free lunch](lect02); [Decision trees](dt101); [One](lect01); 
 + Review: [2](review2); [1](review1)
 + War stories: [And the best report is...](warstory4); [When models kill](warstory0);
 + Tutorials: [Weka101](tutweka);
