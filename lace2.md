@@ -1,5 +1,5 @@
 ---
-title: Privacy wutg Lace2
+title: Privacy with Lace2
 published: true
 ---
 
@@ -27,7 +27,7 @@ reduces the amount of data shared by using multi-party data
 sharing. Here:
 
 - data owners incrementally add data to a cache
-passed among them and contribute ‚Äúinteresting‚Äù data that are
+passed among them and contribute ‚ÄúinterestingÄù data that are
 not similar to the current content of the cache. 
 -  before data
 owner i passes the cache to data owner j, privacy is preserved
@@ -35,7 +35,7 @@ by applying obfuscation algorithms to hide project details.
 
 The
 experiments of this paper show that (a) LACE2 is comparatively
-less expensive than the single-party approach and (b) the multiparty
+less expensive than the single-party approach and (b) the multi party
 approach of LACE2 yields higher privacy than the prior
 approach without damaging predictive efficacy (indeed, in some
 cases, LACE2 leads to better defect predictors).
@@ -55,7 +55,7 @@ personal communication, Barry Boehm stated that he was able
 to publish less than 200 cost estimation records even after 30
 years of COCOMO effort.
 
-## The LACE Appraoch
+## The LACE Approach
 
 
 - Private data remains with data owner inside firewalls.
@@ -63,7 +63,7 @@ years of COCOMO effort.
 Hence, in LACE, there is no need for a central server or
 some third party privatization service.
 - Most data are never shared. LACE prunes away most of
-the data while retaining ‚Äúinteresting‚Äù data points.
+the data while retaining ‚ÄúinterestingÄù data points.
 - The shared data are obfuscated such that queries to that
 data return different values than in the raw data.
 - Obfuscation of the data does not change the classifications
@@ -75,7 +75,7 @@ damaging data mining efficacy.
 Privacy
 threats are classified as
 
-1. identity disclosure or reidentification,
+1. identity disclosure or re-identification,
 2. membership disclosure, 
 3. sensitive attribute disclosure
 
@@ -97,7 +97,7 @@ Focuses
 on protecting a person‚Äôs micro data. 
 
 - If an
-attacker is able to confirm that the target‚Äôs data is contained
+attacker is able to confirm that the targetÄôs data is contained
 in a particular data set.
 
 For example, if the data set contains
@@ -128,17 +128,17 @@ Windows and several small ‚Äústartups‚Äù contribute to a private
 cache. Even with the random perturbation in MORPH (described
 in ¬ßIII-D3), it will be obvious which defect data came Msoft
 
-### Homogenous Transfer
+### Homogeneous Transfer
 
-All attributes same in all data sets. For Heterotenous Transfer Learning, see 
+All attributes same in all data sets. For Heterogeneous Transfer Learning, see 
 Jaechang Nam and Sunghun Kim. 2015. Heterogeneous defect prediction. In Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering (ESEC/FSE 2015). ACM, New York, NY, USA, 508-519. DOI: https://doi.org/10.1145/2786805.2786814
 
 ## Leaf + CLiff + Morph
 
-Leaf = leader follower algrithm for collecting data
+Leaf = leader follower algorithm for collecting data
 
 - Run a cache over n data sources do
-- Add to the cache anything anamlous in data source i
+- Add to the cache anything anomalous in data source i
 
 ### Steps
 
@@ -174,16 +174,16 @@ final private cache can be added to a public data repository
 
 Discretize all numerics (supervised)
 
-Rank ranges by their _power_ often them appear in one class more than thers
+Rank ranges by their _power_ often them appear in one class more than others
 
 - L(H,E) = like(H|E) = P(E|H) * P(H)
-- e.g. if "loc=hi" appears 100 times in the 1000 defectective rows and there are 10000 rows then
+- e.g. if "loc=hi" appears 100 times in the 1000 defective rows and there are 10000 rows then
      - 100/1000 * 1000/11,000
-- a good ranage appears a lot in one class, and more often than note
+- a good range appears a lot in one class, and more often than note
      - prob*support
      - L(H,E)**2 / (L(H,E) + L(notH,E))
 
-Sort columns by their average power. Keep the most powerful rolws of each class.
+Sort columns by their average power. Keep the most powerful rows of each class.
 
 Sort rows by the sum of the _power_ of their ranges. Delete lower half
 
@@ -211,8 +211,8 @@ A=X%: Find out how much of data is not added to cache
 B= (100-X%)*IPR
 - Pick an attribute range
 - Find all rows in raw data with that range
-- Find all rows in privaitized data with that range
-- Increased priacy ratio = division of those two numbers.
+- Find all rows in privatizes data with that range
+- Increased piracy ratio = division of those two numbers.
 
 Report A*B
 
@@ -223,5 +223,5 @@ Report A*B
 
 see slides 47..56 of https://www.slideshare.net/timmenzies/icse15-techbriefing-data-science
 
-see ifig 3 of http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7972992
+see fig 3 of http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7972992
 
