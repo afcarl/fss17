@@ -27,7 +27,7 @@ reduces the amount of data shared by using multi-party data
 sharing. Here:
 
 - data owners incrementally add data to a cache
-passed among them and contribute â€œinteresting€ data that are
+passed among them and contribute "interesting" data that are
 not similar to the current content of the cache. 
 -  before data
 owner i passes the cache to data owner j, privacy is preserved
@@ -44,7 +44,7 @@ cases, LACE2 leads to better defect predictors).
 ## Privacy concerns:
 
 - At a keynote address
-at ESEMâ€™11, Elaine Weyuker doubted that she will ever
+at ESEM'11, Elaine Weyuker doubted that she will ever
 be able to release the AT&T data she used to build defect
 predictors 
 - Due to similar privacy concerns, we were
@@ -63,7 +63,7 @@ years of COCOMO effort.
 Hence, in LACE, there is no need for a central server or
 some third party privatization service.
 - Most data are never shared. LACE prunes away most of
-the data while retaining â€œinteresting€ data points.
+the data while retaining "interesting" data points.
 - The shared data are obfuscated such that queries to that
 data return different values than in the raw data.
 - Obfuscation of the data does not change the classifications
@@ -94,10 +94,10 @@ data and Thelma Arnold from the AOL search data.
 ### Membership disclosure
 
 Focuses
-on protecting a personâ€™s micro data. 
+on protecting a person's micro data. 
 
 - If an
-attacker is able to confirm that the target€™s data is contained
+attacker is able to confirm that the target's data is contained
 in a particular data set.
 
 For example, if the data set contains
@@ -124,9 +124,8 @@ billable hours they can charge their clients).
 ### Assumptions
 
 LACE2 assumes data is _not extreme_ i.e. For example, consider a case where Microsoft
-Windows and several small â€œstartupsâ€ contribute to a private
-cache. Even with the random perturbation in MORPH (described
-in Â§III-D3), it will be obvious which defect data came Msoft
+Windows and several small "startups" contribute to a private
+cache. Even with the random perturbation in MORPH, it will be obvious which defect data came Msoft
 
 ### Homogeneous Transfer
 
