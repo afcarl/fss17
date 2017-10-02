@@ -76,4 +76,40 @@ Your essay should have the sections:
 - All the references in the back are discussed in the text
 - All the figures/tables are mentioned in the text.
 
+## Hints
 
+### Methids for  model readabilty
+### Methods for learnability and repeatability of the results
+
+i.e. using ess CPU and less disk/RAM
+## Methods for mutli-goal reasoning
+## Methods  anomaly detection 
+
+(A little bell that goes "ping!" when new questions not in old data.)
+
+# Methods for Incremental
+
+(Knows how to forget old knowledge and learn new stuff, when required. )
+   - many use an anomaly detector
+
+## Methods for Sharable 
+
+- can succinctly describe the training data (somehow)
+- and/or that data can be mutated to lower the odds of detecting idividuals within the data
+- and/or that summarized/mutated data still works well for learning a model
+
+## Methods for context aware: 
+
+- generates different conclusions for different regions of the data
+
+## Methods for self-tuning
+
+- Differential evolution
+     - https://jvanderw.une.edu.au/DE_1.pdf
+     - http://www1.icsi.berkeley.edu/~storn/code.html
+     - Applied to SE: https://arxiv.org/pdf/1609.01759
+- Genetic algorithms
+     - Tutorial: https://www.tutorialspoint.com/genetic_algorithms/index.htm
+     - Latest and greatest = NSGA-III and MOEA/D
+     - Standard = NSGA-II and SPEA2
+     - Java implementations: http://jmetal.sourceforge.net/
