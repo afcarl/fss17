@@ -3,6 +3,8 @@ title: Essay
 published: true
 ---
 
+XXX add notes on planable
+
 ## Your Task
 
 By Oct23, plan your Oct/Nov project work. To that end, write an essay.
