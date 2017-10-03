@@ -76,6 +76,8 @@ Your essay should have the sections:
 - All the references in the back are discussed in the text
 - All the figures/tables are mentioned in the text.
 
+--------
+
 ## Hints
 
 Note that you cannot read all the the following.  Best to focus in on one or two areas.
