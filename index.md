@@ -15,6 +15,7 @@ title: Welcome
 + War stories: [And the best report is...](warstory4); [When models kill](warstory0);
 + Tutorials: [Weka101](tutweka);
 + Homeworks:  [Submit here](http://tiny.cc/fss17give); [Aug-Sept](homeworks)
++ Project: [Essay](essay)
 
 -------
 
