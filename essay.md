@@ -3,7 +3,6 @@ title: Essay
 published: true
 ---
 
-XXX add notes on actionable
 
 ## Your Task
 
@@ -17,6 +16,7 @@ of the art tool.
 Person2 has done this subject and is willing to make compromises in order support:
 
 - model readabilty
+- actionable conclusions
 - learnability and repeatability of the results
     - i.e. using ess CPU and less disk/RAM
 - mutli-goal reasoning
@@ -86,11 +86,6 @@ Note that you **cannot** read all the the following.  Best to focus in on one or
 
 ### Methods for  model readabilty
 
-- PLanners
-    - Don't report the classifications, but the deltas between
-      nodes in the tree
-    - As done in your homework.
-    - As done in CrossTrees https://arxiv.org/pdf/1609.03614
 - Fast Frugal Trees
     - Good overview: https://goo.gl/5Kkary
     - Background motivation: https://goo.gl/kHrb9s
@@ -102,6 +97,14 @@ Note that you **cannot** read all the the following.  Best to focus in on one or
 
 Measures of success here are (e.g.) size vs performance of model. Perhaps bigger models are better but
 by how much? And is it really worth it?
+
+### Methods for Actionable Conclusions
+
+- PLanners
+    - Don't report the classifications, but the deltas between
+      nodes in the tree
+    - As done in your homework.
+    - As done in CrossTrees https://arxiv.org/pdf/1609.03614
 
 ### Methods for learnability and repeatability of the results
 
