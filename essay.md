@@ -3,7 +3,7 @@ title: Essay
 published: true
 ---
 
-XXX add notes on planable
+XXX add notes on actionable
 
 ## Your Task
 
@@ -82,10 +82,15 @@ Your essay should have the sections:
 
 ## Hints
 
-Note that you cannot read all the the following.  Best to focus in on one or two areas.
+Note that you **cannot** read all the the following.  Best to focus in on one or two areas.
 
 ### Methods for  model readabilty
 
+- PLanners
+    - Don't report the classifications, but the deltas between
+      nodes in the tree
+    - As done in your homework.
+    - As done in CrossTrees https://arxiv.org/pdf/1609.03614
 - Fast Frugal Trees
     - Good overview: https://goo.gl/5Kkary
     - Background motivation: https://goo.gl/kHrb9s
@@ -94,7 +99,7 @@ Note that you cannot read all the the following.  Best to focus in on one or two
     - Note that WEKA has a Bayes nets tookbox
     - IEEE TSE article: https://goo.gl/JQ6mYw
     - IEEE TSE article2: https://goo.gl/yEyZae
-    
+
 Measures of success here are (e.g.) size vs performance of model. Perhaps bigger models are better but
 by how much? And is it really worth it?
 
@@ -161,6 +166,14 @@ Many use an anomaly detector.
 
 Mining over infinite streams
 
+- Incremental decision trees: 
+    - Very dumb method: Learn one tree on all old prior data, learn a new
+      tree on last 1000 examples. If New performs better than old,
+      delete old and run forward with new.
+    - Very fast decision trees (A classic): https://homes.cs.washington.edu/~pedrod/papers/kdd00.pdf.  This is in [weka](http://weka.sourceforge.net/doc.dev/weka/classifiers/trees/HoeffdingTree.html)
+    - More recent work: [Accurate decision trees for mining high-speed data streams](https://pdfs.semanticscholar.org/87d0/523d9042e6482df0ae80b59c78f25252525f.pdf)
+    - A nice way to do incremental decision trees that can handle uncertainty
+      https://github.com/txt/fss17/files/1353358/MH_MSG_IDT2015.pdf
 - incremental discretization and Naive Bayesa https://goo.gl/BU3aad:
 - incremental clustering parametric: http://ai-at-wvu.blogspot.com/search?q=elkan
 - incremental clustering mini-batch-k-means and  its recent  enhancements:
@@ -169,9 +182,12 @@ Active learning:
 
 - Many tricks https://goo.gl/xgqeFJ
 
-- Naive Bayes is prety fast, low memory, incremental algorithm:
-    - See also NB variants that handle low frequency data sets (see xithe TWCNB psuedcode in section 4.4 of fig https://goo.gl/bM6b87)
-    - Use some fast clutering method to divide the data, then build one NB classifier per leaf  (https://goo.gl/9PmLLB)
+Naive Bayes is prety fast, low memory, incremental algorithm:
+
+- See also NB variants that handle low frequency data sets (see xithe TWCNB psuedcode in section 4.4 of fig https://goo.gl/bM6b87)
+- Use some fast clutering method to divide the data, then build one NB classifier per leaf  (https://goo.gl/9PmLLB)
+
+
 
 If learning over infinite N examples, how soon before the learning stops improving? 
 
