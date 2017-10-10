@@ -12,7 +12,6 @@ title: Welcome
 
 + Lectures:  [Lace2](lace2); [Stats](stats); [6 learners](sixlearners); [No free lunch](lect02); [Decision trees](dt101); [One](lect01); 
 + Review: [3](review3); [2](review2); [1](review1)
->>>>>>> 508efbae68a0c387a707c18da96fb1dbb90f0f4c
 + War stories: [And the best report is...](warstory4); [When models kill](warstory0);
 + Tutorials: [Weka101](tutweka);
 + Homeworks:  [Submit here](http://tiny.cc/fss17give); [Aug-Sept](homeworks)
