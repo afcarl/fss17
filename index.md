@@ -10,10 +10,6 @@ title: Welcome
 
 (latest listed first)
 
-<<<<<<< HEAD
-+ Lectures:  [Lace2](lace2); [De](de.md), [Stats](stats); [6 learners](sixlearners); [No free lunch](lect02); [Decision trees](dt101); [One](lect01); 
-+ Review: [2](review2); [1](review1)
-=======
 + Lectures:  [Lace2](lace2); [Stats](stats); [6 learners](sixlearners); [No free lunch](lect02); [Decision trees](dt101); [One](lect01); 
 + Review: [3](review3); [2](review2); [1](review1)
 >>>>>>> 508efbae68a0c387a707c18da96fb1dbb90f0f4c
